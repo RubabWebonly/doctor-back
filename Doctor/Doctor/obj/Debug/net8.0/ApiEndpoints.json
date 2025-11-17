@@ -1,0 +1,1222 @@
+[
+  {
+    "ContainingType": "Doctor.Controllers.AppointmentController",
+    "Method": "Delete",
+    "RelativePath": "api/Appointment/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.AppointmentController",
+    "Method": "GetById",
+    "RelativePath": "api/Appointment/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.AppointmentController",
+    "Method": "Create",
+    "RelativePath": "api/Appointment/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "Doctor.Application.CQRS.Appointments.Commands.CreateAppointmentCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.AppointmentController",
+    "Method": "GetAll",
+    "RelativePath": "api/Appointment/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.AppointmentController",
+    "Method": "GetStats",
+    "RelativePath": "api/Appointment/stats",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "range",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "year",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.AppointmentController",
+    "Method": "Update",
+    "RelativePath": "api/Appointment/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "Doctor.Application.CQRS.Appointments.Commands.UpdateAppointmentCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.AppointmentSlotController",
+    "Method": "GetAvailable",
+    "RelativePath": "api/AppointmentSlot/available",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.AppointmentSlotController",
+    "Method": "Generate",
+    "RelativePath": "api/AppointmentSlot/generate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.CQRS.AppointmentSlots.Commands.GenerateAppointmentSlotsCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.AppointmentSlotController",
+    "Method": "GetAll",
+    "RelativePath": "api/AppointmentSlot/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.AuthController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/Auth/forgot-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "Application.CQRS.Auth.Commands.ForgotPasswordCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "LoginCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.AuthController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/Auth/reset-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "Application.CQRS.Auth.Commands.ResetPasswordCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CategoryController",
+    "Method": "Delete",
+    "RelativePath": "api/Category/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CategoryController",
+    "Method": "Create",
+    "RelativePath": "api/Category/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "CreateCategoryCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CategoryController",
+    "Method": "GetAll",
+    "RelativePath": "api/Category/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CategoryController",
+    "Method": "Update",
+    "RelativePath": "api/Category/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "UpdateCategoryCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.ClinicController",
+    "Method": "Delete",
+    "RelativePath": "api/Clinic/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.ClinicController",
+    "Method": "GetById",
+    "RelativePath": "api/Clinic/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.ClinicController",
+    "Method": "Create",
+    "RelativePath": "api/Clinic/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "Doctor.Application.CQRS.Clinics.Commands.CreateClinicCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.ClinicController",
+    "Method": "GetAll",
+    "RelativePath": "api/Clinic/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.ClinicController",
+    "Method": "Update",
+    "RelativePath": "api/Clinic/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "Doctor.Application.CQRS.Clinics.Commands.UpdateClinicCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosisController",
+    "Method": "Delete",
+    "RelativePath": "api/Diagnosis/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosisController",
+    "Method": "GetById",
+    "RelativePath": "api/Diagnosis/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosisController",
+    "Method": "Create",
+    "RelativePath": "api/Diagnosis/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "Doctor.Application.CQRS.Diagnoses.Commands.CreateDiagnosisCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosisController",
+    "Method": "GetAll",
+    "RelativePath": "api/Diagnosis/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DiagnosisController",
+    "Method": "Update",
+    "RelativePath": "api/Diagnosis/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "Doctor.Application.CQRS.Diagnoses.Commands.UpdateDiagnosisCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DietController",
+    "Method": "Delete",
+    "RelativePath": "api/Diet/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DietController",
+    "Method": "GetById",
+    "RelativePath": "api/Diet/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DietController",
+    "Method": "Create",
+    "RelativePath": "api/Diet/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DietController",
+    "Method": "GetAll",
+    "RelativePath": "api/Diet/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DietController",
+    "Method": "Update",
+    "RelativePath": "api/Diet/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicineController",
+    "Method": "Delete",
+    "RelativePath": "api/Medicine/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicineController",
+    "Method": "Create",
+    "RelativePath": "api/Medicine/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "CreateMedicineCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicineController",
+    "Method": "GetAll",
+    "RelativePath": "api/Medicine/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MedicineController",
+    "Method": "Update",
+    "RelativePath": "api/Medicine/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "UpdateMedicineCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.PatientController",
+    "Method": "GetById",
+    "RelativePath": "api/Patient/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.PatientController",
+    "Method": "Delete",
+    "RelativePath": "api/Patient/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.PatientController",
+    "Method": "Create",
+    "RelativePath": "api/Patient/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "Doctor.Application.CQRS.Patients.Commands.CreatePatientCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.PatientController",
+    "Method": "GetAll",
+    "RelativePath": "api/Patient/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.PatientController",
+    "Method": "Search",
+    "RelativePath": "api/Patient/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.PatientController",
+    "Method": "GetStats",
+    "RelativePath": "api/Patient/stats",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "range",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "year",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.PatientController",
+    "Method": "Update",
+    "RelativePath": "api/Patient/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "Doctor.Application.CQRS.Patients.Commands.UpdatePatientCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.API.Controllers.PatientDietController",
+    "Method": "Delete",
+    "RelativePath": "api/PatientDiet/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.API.Controllers.PatientDietController",
+    "Method": "Create",
+    "RelativePath": "api/PatientDiet/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "Doctor.Application.CQRS.PatientDiets.Commands.CreatePatientDietCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.API.Controllers.PatientDietController",
+    "Method": "GetAll",
+    "RelativePath": "api/PatientDiet/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.API.Controllers.PatientPrescriptionController",
+    "Method": "Delete",
+    "RelativePath": "api/PatientPrescription/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.API.Controllers.PatientPrescriptionController",
+    "Method": "Create",
+    "RelativePath": "api/PatientPrescription/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "Doctor.Application.CQRS.PatientPrescriptions.Commands.CreatePatientPrescriptionCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.API.Controllers.PatientPrescriptionController",
+    "Method": "GetAll",
+    "RelativePath": "api/PatientPrescription/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrescriptionController",
+    "Method": "Delete",
+    "RelativePath": "api/Prescription/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrescriptionController",
+    "Method": "GetById",
+    "RelativePath": "api/Prescription/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrescriptionController",
+    "Method": "Create",
+    "RelativePath": "api/Prescription/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrescriptionController",
+    "Method": "GetAll",
+    "RelativePath": "api/Prescription/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PrescriptionController",
+    "Method": "Update",
+    "RelativePath": "api/Prescription/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceController",
+    "Method": "Delete",
+    "RelativePath": "api/Service/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceController",
+    "Method": "GetById",
+    "RelativePath": "api/Service/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceController",
+    "Method": "Create",
+    "RelativePath": "api/Service/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "Doctor.Application.CQRS.Services.Commands.CreateServiceCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceController",
+    "Method": "GetAll",
+    "RelativePath": "api/Service/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceController",
+    "Method": "Update",
+    "RelativePath": "api/Service/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "Doctor.Application.CQRS.Services.Commands.UpdateServiceCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.SystemSettingController",
+    "Method": "Get",
+    "RelativePath": "api/SystemSetting/get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.SystemSettingController",
+    "Method": "Update",
+    "RelativePath": "api/SystemSetting/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Doctor.Application.CQRS.SystemSettings.Commands.UpdateSystemSettingCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TreatmentController",
+    "Method": "Delete",
+    "RelativePath": "api/Treatment/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TreatmentController",
+    "Method": "GetById",
+    "RelativePath": "api/Treatment/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TreatmentController",
+    "Method": "Create",
+    "RelativePath": "api/Treatment/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PatientId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ServiceId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "DiagnosisId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Notes",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "HasNausea",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "HasVomiting",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "HasItching",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "HasHeartburn",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "HasDiarrhea",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "HasJaundice",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "HasConstipation",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "HasAbdominalPain",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Surveys",
+        "Type": "System.Collections.Generic.List\u00601[[Doctor.Application.CQRS.Treatments.Commands.TreatmentSurveyDto, Doctor.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TreatmentController",
+    "Method": "GetAll",
+    "RelativePath": "api/Treatment/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TreatmentController",
+    "Method": "GetStats",
+    "RelativePath": "api/Treatment/stats",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "range",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "year",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TreatmentController",
+    "Method": "Update",
+    "RelativePath": "api/Treatment/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ServiceId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "DiagnosisId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Notes",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "HasNausea",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "HasVomiting",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "HasItching",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "HasHeartburn",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "HasDiarrhea",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "HasJaundice",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "HasConstipation",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "HasAbdominalPain",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Surveys",
+        "Type": "System.Collections.Generic.List\u00601[[Doctor.Application.CQRS.Treatments.Commands.TreatmentSurveyUpdateDto, Doctor.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.UserProfileController",
+    "Method": "GetByEmail",
+    "RelativePath": "api/UserProfile/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.UserProfileController",
+    "Method": "Upsert",
+    "RelativePath": "api/UserProfile/upsert",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FullName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Speciality",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MobileNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "WorkNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ProfileImageUrl",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Doctor.WeatherForecast, Doctor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

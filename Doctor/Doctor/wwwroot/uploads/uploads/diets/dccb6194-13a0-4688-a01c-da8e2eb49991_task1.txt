@@ -1,0 +1,34 @@
+import re
+
+text = """PYthon is very Popular language but many STUDENTs not know, how use it Correctly some think its easy, but mistakes Happens. the Code Runs but Output is wrong Because logic mistake and no one checks?? in company Project developer WRITES functions Without comments and no tests maked; which cause many Errors later on. Sometimes List are useD when Dictionary Should Be more Correct choose, this make program slower. A student Writed program, but forget Saving file so it dissapeArd!!! variables Named Like X1 TEMP data2 That Makes Understanding Hardly, even for team lead. json File included Extra Commas and parsing WAS Fail, nobody understand why, program crash. ONE Function had MORE Than 200 Lines which is very big difficult FOR read so debugging waste Much time. the Team Not Followed pep8 so Indentation And spacing WAS inconsistent , code looks messy. In FINAL exam some Students COPY-pasted code FROM internet Without UNDERSTANDING what IT do and teacher was very sad ?"""
+
+def fix_text(t: str) -> str:
+ 
+    t = t.lower()
+
+    t = re.sub(r"[!?;:]+", ".", t)
+
+  
+    t = re.sub(r",(?=\S)", ", ", t)
+
+
+    t = re.sub(r"\s+", " ", t)
+
+
+    corrections = {
+        "maked": "made",
+        "writed": "wrote",
+        "dissapear": "disappear",
+        "dissapeard": "disappeared"
+    }
+    for wrong, right in corrections.items():
+        t = t.replace(wrong, right)
+
+  
+    sentences = [s.strip().capitalize() for s in t.split(".") if s.strip()]
+
+
+    fixed = ". ".join(sentences) + "."
+    return fixed
+
+print(fix_text(text))
