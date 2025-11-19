@@ -9,8 +9,11 @@ namespace Doctor.Application.CQRS.Treatments.Commands
     public class UpdateTreatmentCommand : IRequest<Unit>
     {
         public int Id { get; set; }
+
         public int ServiceId { get; set; }
         public int DiagnosisId { get; set; }
+
+        public string? Complaint { get; set; }   // 🔥 YENİ
         public string? Notes { get; set; }
 
         // Simptomlar
@@ -30,6 +33,7 @@ namespace Doctor.Application.CQRS.Treatments.Commands
     public class TreatmentSurveyUpdateDto
     {
         public int? Id { get; set; } // mövcud anket üçün
+
         public string? Anamnesis { get; set; }
         public DateTime? AnamnesisDate { get; set; }
 
@@ -41,6 +45,9 @@ namespace Doctor.Application.CQRS.Treatments.Commands
 
         public string? PreviousDiseases { get; set; }
         public string? MedicationUsage { get; set; }
+
+        public string? PastSurgeries { get; set; }         // 🔥 YENİ
+        public string? HereditaryDiseases { get; set; }    // 🔥 YENİ
 
         public bool HasAllergy { get; set; }
         public bool UsesAlcohol { get; set; }
@@ -87,6 +94,7 @@ namespace Doctor.Application.CQRS.Treatments.Commands
             // 🔹 Əsas müayinə hissəsini yenilə
             treatment.ServiceId = request.ServiceId;
             treatment.DiagnosisId = request.DiagnosisId;
+            treatment.Complaint = request.Complaint;     // 🔥 Complaint map olundu
             treatment.Notes = request.Notes;
             treatment.UpdatedDate = DateTime.UtcNow;
 
@@ -104,7 +112,9 @@ namespace Doctor.Application.CQRS.Treatments.Commands
 
             // 🔹 Mövcud anketləri tap
             var allSurveys = await _surveyRepo.GetAllAsync();
-            var treatmentSurveys = allSurveys.Where(s => s.TreatmentId == treatment.Id).ToList();
+            var treatmentSurveys = allSurveys
+                .Where(s => s.TreatmentId == treatment.Id)
+                .ToList();
 
             foreach (var surveyDto in request.Surveys)
             {
@@ -114,15 +124,21 @@ namespace Doctor.Application.CQRS.Treatments.Commands
                 if (surveyDto.Id.HasValue)
                 {
                     survey = treatmentSurveys.FirstOrDefault(s => s.Id == surveyDto.Id.Value);
-                    if (survey == null) continue;
+                    if (survey == null)
+                        continue;
 
                     survey.Anamnesis = surveyDto.Anamnesis;
                     survey.AnamnesisDate = surveyDto.AnamnesisDate;
+
                     survey.PreviousDiseases = surveyDto.PreviousDiseases;
                     survey.MedicationUsage = surveyDto.MedicationUsage;
+                    survey.PastSurgeries = surveyDto.PastSurgeries;               // 🔥
+                    survey.HereditaryDiseases = surveyDto.HereditaryDiseases;     // 🔥
+
                     survey.HasAllergy = surveyDto.HasAllergy;
                     survey.UsesAlcohol = surveyDto.UsesAlcohol;
                     survey.Smokes = surveyDto.Smokes;
+
                     survey.PhysicalExamination = surveyDto.PhysicalExamination;
                     survey.PlanNotes = surveyDto.PlanNotes;
                     survey.NextVisitDate = surveyDto.NextVisitDate;
@@ -138,22 +154,30 @@ namespace Doctor.Application.CQRS.Treatments.Commands
                         TreatmentId = treatment.Id,
                         Anamnesis = surveyDto.Anamnesis,
                         AnamnesisDate = surveyDto.AnamnesisDate,
+
                         PreviousDiseases = surveyDto.PreviousDiseases,
                         MedicationUsage = surveyDto.MedicationUsage,
+                        PastSurgeries = surveyDto.PastSurgeries,               // 🔥
+                        HereditaryDiseases = surveyDto.HereditaryDiseases,     // 🔥
+
                         HasAllergy = surveyDto.HasAllergy,
                         UsesAlcohol = surveyDto.UsesAlcohol,
                         Smokes = surveyDto.Smokes,
+
                         PhysicalExamination = surveyDto.PhysicalExamination,
                         PlanNotes = surveyDto.PlanNotes,
                         NextVisitDate = surveyDto.NextVisitDate
                     };
+
                     await _surveyRepo.AddAsync(survey);
                     await _surveyRepo.SaveAsync();
                 }
 
                 // 🔹 Faylları yenilə
                 var allFiles = await _fileRepo.GetAllAsync();
-                var filesForSurvey = allFiles.Where(f => f.TreatmentSurveyId == survey.Id).ToList();
+                var filesForSurvey = allFiles
+                    .Where(f => f.TreatmentSurveyId == survey.Id)
+                    .ToList();
 
                 var filesToRemove = filesForSurvey
                     .Where(f => surveyDto.ExistingFiles == null || !surveyDto.ExistingFiles.Contains(f.FilePath))
@@ -161,7 +185,9 @@ namespace Doctor.Application.CQRS.Treatments.Commands
 
                 foreach (var f in filesToRemove)
                 {
-                    _fileService.Delete(f.FilePath);
+                    if (!string.IsNullOrWhiteSpace(f.FilePath))
+                        _fileService.Delete(f.FilePath);
+
                     _fileRepo.Delete(f);
                 }
                 await _fileRepo.SaveAsync();
@@ -196,6 +222,7 @@ namespace Doctor.Application.CQRS.Treatments.Commands
                             TreatmentSurveyId = survey.Id,
                             DietId = id
                         });
+
                     await _dietRepo.SaveAsync();
                 }
 
@@ -213,6 +240,7 @@ namespace Doctor.Application.CQRS.Treatments.Commands
                             TreatmentSurveyId = survey.Id,
                             PrescriptionId = id
                         });
+
                     await _presRepo.SaveAsync();
                 }
             }

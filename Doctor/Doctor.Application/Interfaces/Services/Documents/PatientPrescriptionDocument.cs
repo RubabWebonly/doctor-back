@@ -11,7 +11,7 @@ namespace Doctor.Application.Services.Documents
         private readonly string _phone;
         private readonly DateTime _date;
         private readonly string _diagnosis;
-        private readonly List<string>? _diets;
+        private readonly List<string>? _items;
         private readonly string _basePath;
 
         public PatientPrescriptionDocument(
@@ -20,7 +20,7 @@ namespace Doctor.Application.Services.Documents
             string phone,
             DateTime date,
             string diagnosis,
-            List<string>? diets,
+            List<string>? items,
             string basePath)
         {
             _patientName = patientName;
@@ -28,7 +28,7 @@ namespace Doctor.Application.Services.Documents
             _phone = phone;
             _date = date;
             _diagnosis = diagnosis;
-            _diets = diets;
+            _items = items;
             _basePath = basePath;
         }
 
@@ -40,30 +40,53 @@ namespace Doctor.Application.Services.Documents
                 page.Margin(40);
                 page.DefaultTextStyle(x => x.FontSize(12));
 
-                // ✅ Arxa plan şəkilləri (top və bottom)
+                // ========================================================
+                // BACKGROUND LAYERS
+                // ========================================================
                 page.Background().Layers(layers =>
                 {
                     layers.PrimaryLayer().Element(e => e.Container());
 
                     var topPath = Path.Combine(_basePath, "top.png");
                     var bottomPath = Path.Combine(_basePath, "bottom.png");
+                    var watermarkPath = Path.Combine(_basePath, "logo.png");
 
                     if (File.Exists(topPath))
-                        layers.Layer().Element(e => e.AlignTop().Image(topPath, ImageScaling.FitWidth));
+                        layers.Layer().Element(e =>
+                            e.AlignTop().Image(topPath, ImageScaling.FitWidth));
 
                     if (File.Exists(bottomPath))
-                        layers.Layer().Element(e => e.AlignBottom().Image(bottomPath, ImageScaling.FitWidth));
+                        layers.Layer().Element(e =>
+                            e.AlignBottom().Image(bottomPath, ImageScaling.FitWidth));
+
+                    // WATERMARK
+                    if (File.Exists(watermarkPath))
+                    {
+                        layers.Layer().Element(e =>
+                            e.AlignCenter()
+                             .TranslateY(100)
+                             .Image(watermarkPath, ImageScaling.FitWidth));
+                    }
                 });
 
-                // 🔸 Əsas məzmun
+                // ========================================================
+                // CONTENT (ORGANIZED)
+                // ========================================================
                 page.Content().PaddingHorizontal(40).Column(col =>
                 {
                     col.Spacing(18);
 
-                    // Başlıq
-                    col.Item().AlignCenter().Text("💊 Resept").Bold().FontSize(16);
+                    // HEADER LOGO
+                    var logoPath = Path.Combine(_basePath, "fordiet.png");
+                    col.Item().Row(row =>
+                    {
+                        if (File.Exists(logoPath))
+                            row.ConstantItem(120).Image(logoPath, ImageScaling.FitWidth);
 
-                    // Əsas məlumatlar
+                        row.RelativeItem();
+                    });
+
+                    // PATIENT INFO
                     col.Item().Row(row =>
                     {
                         row.RelativeItem().Text($"Pasiyent: {_patientName}");
@@ -76,38 +99,56 @@ namespace Doctor.Application.Services.Documents
                         row.RelativeItem().AlignRight().Text($"Əlaqə: {_phone}");
                     });
 
-                    // Diaqnoz
+                    // DIAGNOSIS (NO BORDER)
                     col.Item()
                         .PaddingTop(10)
-                        .Border(1)
-                        .BorderColor(Colors.Grey.Lighten1)
-                        .Padding(10)
                         .Column(inner =>
                         {
                             inner.Item().Text("Diaqnoz:").Bold();
-                            inner.Item().Text(_diagnosis ?? "Diaqnoz qeyd olunmayıb.");
+                            inner.Item().Text(_diagnosis ?? "");
                         });
 
-                    // Diet / təyinatlar
-                    if (_diets != null && _diets.Any())
+                    // DIETS LIST
+                    if (_items != null && _items.Any())
                     {
                         col.Item()
                             .PaddingTop(15)
-                            .Border(1)
-                            .BorderColor(Colors.Grey.Lighten2)
-                            .Padding(10)
                             .Column(inner =>
                             {
-                                inner.Item().Text("Təyin olunan dərmanlar və ya dietlər:").Bold();
-                                foreach (var diet in _diets)
-                                    inner.Item().Text($"• {diet}");
+                                inner.Item().Text("Təyin olunan dərmanlar və dietlər:").Bold();
+                                foreach (var item in _items)
+                                    inner.Item().Text($"• {item}");
                             });
                     }
 
-                    // İmza
-                    col.Item().PaddingTop(25).AlignRight().Text("İmza: ____________________");
+                    // SIGN
+                    col.Item().PaddingTop(25)
+                        .AlignRight()
+                        .Text("İmza: ____________________");
+                });
+
+                // ========================================================
+                // FOOTER — ALWAYS AT THE BOTTOM (NEVER MOVES)
+                // ========================================================
+                page.Footer().PaddingTop(20).Column(col =>
+                {
+                    col.Item().Row(row =>
+                    {
+                        row.RelativeItem().Column(c =>
+                        {
+                            c.Item().Text("📞 +994 10 123 4567");
+                            c.Item().Text("📞 +994 10 123 4567");
+                        });
+
+                        row.RelativeItem().Column(c =>
+                        {
+                            c.Item().Text("📍 Baku, Azerbaijan");
+                            c.Item().Text("example address");
+                        });
+                    });
                 });
             });
         }
+
     }
 }

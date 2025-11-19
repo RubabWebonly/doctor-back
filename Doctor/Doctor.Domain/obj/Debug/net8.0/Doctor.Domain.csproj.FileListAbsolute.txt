@@ -64,3 +64,4 @@ C:\Users\User\Desktop\DoctorBack\Doctor\Doctor.Domain\obj\Debug\net8.0\refint\Do
 C:\Users\User\Desktop\DoctorBack\Doctor\Doctor.Domain\obj\Debug\net8.0\Doctor.Domain.pdb
 C:\Users\User\Desktop\DoctorBack\Doctor\Doctor.Domain\obj\Debug\net8.0\Doctor.Domain.genruntimeconfig.cache
 C:\Users\User\Desktop\DoctorBack\Doctor\Doctor.Domain\obj\Debug\net8.0\ref\Doctor.Domain.dll
+C:\Users\User\Desktop\DoctorBack\Doctor\Doctor.Domain\obj\Debug\net8.0\Doctor.Domain.sourcelink.json

@@ -40,30 +40,54 @@ namespace Doctor.Application.Services.Documents
                 page.Margin(40);
                 page.DefaultTextStyle(x => x.FontSize(12));
 
-                // ✅ Arxa plan (top və bottom şəkillər)
+                // ============================================================
+                //  🔵 BACKGROUND LAYERS
+                // ============================================================
                 page.Background().Layers(layers =>
                 {
-                    layers.PrimaryLayer().Element(e => e.Container()); // əsas təbəqə
+                    // ✅ MÜTLƏQ OLMALIDIR – Primary Layer
+                    layers.PrimaryLayer().Element(e => e.Container());
 
-                    var topPath = Path.Combine(_basePath, "top.png");
-                    var bottomPath = Path.Combine(_basePath, "bottom.png");
+                    var top = Path.Combine(_basePath, "top.png");
+                    var bottom = Path.Combine(_basePath, "bottom.png");
+                    var watermark = Path.Combine(_basePath, "logo.png");
 
-                    if (File.Exists(topPath))
-                        layers.Layer().Element(e => e.AlignTop().Image(topPath, ImageScaling.FitWidth));
+                    // 🔵 Yuxarı şəkil
+                    if (File.Exists(top))
+                        layers.Layer().Element(e =>
+                            e.AlignTop().Image(top, ImageScaling.FitWidth));
 
-                    if (File.Exists(bottomPath))
-                        layers.Layer().Element(e => e.AlignBottom().Image(bottomPath, ImageScaling.FitWidth));
+                    // 🔵 Aşağı şəkil
+                    if (File.Exists(bottom))
+                        layers.Layer().Element(e =>
+                            e.AlignBottom().Image(bottom, ImageScaling.FitWidth));
+
+                    // 🔵 Orta şəffaf watermark
+                    if (File.Exists(watermark))
+                        layers.Layer().Element(e =>
+                            e.AlignCenter()
+                             .TranslateY(200)
+                             .Image(watermark, ImageScaling.FitWidth));
                 });
 
-                // 📄 Məzmun hissəsi
+
+                // ============================================================
+                //  📄 CONTENT (MIDDLE PART)
+                // ============================================================
                 page.Content().PaddingHorizontal(40).Column(col =>
                 {
-                    col.Spacing(18);
+                    col.Spacing(15);
 
-                    // Başlıq
-                    col.Item().AlignCenter().Text("🥗 Diet Planı").Bold().FontSize(16);
+                    var logoPath = Path.Combine(_basePath, "fordiet.png");
 
-                    // Əsas məlumatlar
+                    col.Item().Row(row =>
+                    {
+                        if (File.Exists(logoPath))
+                            row.ConstantItem(120).Image(logoPath, ImageScaling.FitWidth);
+
+                        row.RelativeItem();
+                    });
+
                     col.Item().Row(row =>
                     {
                         row.RelativeItem().Text($"Pasiyent: {_patientName}");
@@ -76,36 +100,41 @@ namespace Doctor.Application.Services.Documents
                         row.RelativeItem().AlignRight().Text($"Əlaqə: {_phone}");
                     });
 
-                    // Diaqnoz
-                    col.Item()
-                        .PaddingTop(10)
-                        .Border(1)
-                        .BorderColor(Colors.Grey.Lighten1)
-                        .Padding(10)
-                        .Column(inner =>
-                        {
-                            inner.Item().Text("Diaqnoz:").Bold();
-                            inner.Item().Text(_diagnosis ?? "Diaqnoz qeyd olunmayıb.");
-                        });
+                    col.Item().PaddingTop(10).Padding(10).Column(inner =>
+                    {
+                        inner.Item().Text("Diaqnoz:").Bold();
+                        inner.Item().Text(_diagnosis ?? "");
+                    });
 
-                    // Dietlər
                     if (_diets != null && _diets.Any())
                     {
-                        col.Item()
-                            .PaddingTop(15)
-                            .Border(1)
-                            .BorderColor(Colors.Grey.Lighten2)
-                            .Padding(10)
-                            .Column(inner =>
-                            {
-                                inner.Item().Text("Təyin olunan Dietlər:").Bold();
-                                foreach (var diet in _diets)
-                                    inner.Item().Text($"• {diet}");
-                            });
+                        col.Item().PaddingTop(15).Padding(10).Column(inner =>
+                        {
+                            inner.Item().Text("Təyin olunan Dietlər:").Bold();
+                            foreach (var diet in _diets)
+                                inner.Item().Text($"• {diet}");
+                        });
                     }
 
-                    // İmza
                     col.Item().PaddingTop(25).AlignRight().Text("İmza: ____________________");
+                });
+
+                // ============================================================
+                //  🔵 FOOTER — HƏMİŞƏ AŞAĞIDA
+                // ============================================================
+                page.Footer().PaddingHorizontal(40).PaddingBottom(10).Row(footer =>
+                {
+                    footer.RelativeItem().Column(c =>
+                    {
+                        c.Item().Text("📞  +994 10 123 4567");
+                        c.Item().Text("📞  +994 10 123 4567");
+                    });
+
+                    footer.RelativeItem().Column(c =>
+                    {
+                        c.Item().Text("📍  Baku, Azerbaijan");
+                        c.Item().Text("      example address");
+                    });
                 });
             });
         }

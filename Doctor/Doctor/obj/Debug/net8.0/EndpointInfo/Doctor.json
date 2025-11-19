@@ -784,6 +784,138 @@
         }
       }
     },
+    "/api/ForDiet/get-all": {
+      "get": {
+        "tags": [
+          "ForDiet"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ForDiet/create": {
+      "post": {
+        "tags": [
+          "ForDiet"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateForDietCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateForDietCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateForDietCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ForDiet/delete/{id}": {
+      "delete": {
+        "tags": [
+          "ForDiet"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ForPrescription/create": {
+      "post": {
+        "tags": [
+          "ForPrescription"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateForPrescriptionCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateForPrescriptionCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateForPrescriptionCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ForPrescription/{id}": {
+      "delete": {
+        "tags": [
+          "ForPrescription"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ForPrescription/get-all": {
+      "get": {
+        "tags": [
+          "ForPrescription"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Medicine/get-all": {
       "get": {
         "tags": [
@@ -1506,6 +1638,9 @@
                     "type": "integer",
                     "format": "int32"
                   },
+                  "Complaint": {
+                    "type": "string"
+                  },
                   "Notes": {
                     "type": "string"
                   },
@@ -1553,6 +1688,9 @@
                   "style": "form"
                 },
                 "DiagnosisId": {
+                  "style": "form"
+                },
+                "Complaint": {
                   "style": "form"
                 },
                 "Notes": {
@@ -1622,6 +1760,9 @@
                     "type": "integer",
                     "format": "int32"
                   },
+                  "Complaint": {
+                    "type": "string"
+                  },
                   "Notes": {
                     "type": "string"
                   },
@@ -1665,6 +1806,9 @@
                   "style": "form"
                 },
                 "DiagnosisId": {
+                  "style": "form"
+                },
+                "Complaint": {
                   "style": "form"
                 },
                 "Notes": {
@@ -2013,6 +2157,88 @@
         },
         "additionalProperties": false
       },
+      "CreateForDietCommand": {
+        "type": "object",
+        "properties": {
+          "patientId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "patientFullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "doctorFullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "diagnosis": {
+            "type": "string",
+            "nullable": true
+          },
+          "pdfName": {
+            "type": "string",
+            "nullable": true
+          },
+          "diets": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateForPrescriptionCommand": {
+        "type": "object",
+        "properties": {
+          "patientId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "patientFullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "doctorFullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "diagnosis": {
+            "type": "string",
+            "nullable": true
+          },
+          "pdfName": {
+            "type": "string",
+            "nullable": true
+          },
+          "prescriptions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "CreateMedicineCommand": {
         "type": "object",
         "properties": {
@@ -2087,6 +2313,10 @@
             "type": "string",
             "nullable": true
           },
+          "pdfName": {
+            "type": "string",
+            "nullable": true
+          },
           "diets": {
             "type": "array",
             "items": {
@@ -2121,6 +2351,10 @@
             "format": "date-time"
           },
           "diagnosis": {
+            "type": "string",
+            "nullable": true
+          },
+          "pdfName": {
             "type": "string",
             "nullable": true
           },
@@ -2260,6 +2494,14 @@
             "type": "string",
             "nullable": true
           },
+          "pastSurgeries": {
+            "type": "string",
+            "nullable": true
+          },
+          "hereditaryDiseases": {
+            "type": "string",
+            "nullable": true
+          },
           "hasAllergy": {
             "type": "boolean"
           },
@@ -2338,6 +2580,14 @@
             "nullable": true
           },
           "medicationUsage": {
+            "type": "string",
+            "nullable": true
+          },
+          "pastSurgeries": {
+            "type": "string",
+            "nullable": true
+          },
+          "hereditaryDiseases": {
             "type": "string",
             "nullable": true
           },

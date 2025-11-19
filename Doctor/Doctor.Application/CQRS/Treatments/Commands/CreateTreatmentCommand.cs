@@ -11,10 +11,12 @@ namespace Doctor.Application.CQRS.Treatments.Commands
         public int PatientId { get; set; }
         public int ServiceId { get; set; }
         public int DiagnosisId { get; set; }
+
+        public string? Complaint { get; set; }
         public string? Notes { get; set; }
+
         public DateTime Date { get; set; } = DateTime.UtcNow;
 
-        // Simptomlar
         public bool HasNausea { get; set; }
         public bool HasVomiting { get; set; }
         public bool HasItching { get; set; }
@@ -24,7 +26,6 @@ namespace Doctor.Application.CQRS.Treatments.Commands
         public bool HasConstipation { get; set; }
         public bool HasAbdominalPain { get; set; }
 
-        // Birdən çox müayinə anketi (survey)
         public List<TreatmentSurveyDto> Surveys { get; set; } = new();
     }
 
@@ -32,7 +33,6 @@ namespace Doctor.Application.CQRS.Treatments.Commands
     {
         public string? Anamnesis { get; set; }
         public DateTime? AnamnesisDate { get; set; }
-
         public List<IFormFile>? Files { get; set; }
 
         public List<int>? SelectedDietIds { get; set; }
@@ -40,6 +40,9 @@ namespace Doctor.Application.CQRS.Treatments.Commands
 
         public string? PreviousDiseases { get; set; }
         public string? MedicationUsage { get; set; }
+
+        public string? PastSurgeries { get; set; }
+        public string? HereditaryDiseases { get; set; }
 
         public bool HasAllergy { get; set; }
         public bool UsesAlcohol { get; set; }
@@ -78,14 +81,15 @@ namespace Doctor.Application.CQRS.Treatments.Commands
 
         public async Task<int> Handle(CreateTreatmentCommand request, CancellationToken cancellationToken)
         {
-            // === Əsas müayinə (üst hissə) ===
             var treatment = new Treatment
             {
                 PatientId = request.PatientId,
                 ServiceId = request.ServiceId,
                 DiagnosisId = request.DiagnosisId,
+                Complaint = request.Complaint,
                 Notes = request.Notes,
-                Date = request.Date,
+                Date = request.Date == default ? DateTime.UtcNow : request.Date,
+
                 HasNausea = request.HasNausea,
                 HasVomiting = request.HasVomiting,
                 HasItching = request.HasItching,
@@ -99,7 +103,9 @@ namespace Doctor.Application.CQRS.Treatments.Commands
             await _treatmentRepo.AddAsync(treatment);
             await _treatmentRepo.SaveAsync();
 
-            // === Hər survey üçün ayrıca anket yarat ===
+            if (request.Surveys is null || request.Surveys.Count == 0)
+                return treatment.Id;
+
             foreach (var s in request.Surveys)
             {
                 var survey = new TreatmentSurvey
@@ -107,11 +113,16 @@ namespace Doctor.Application.CQRS.Treatments.Commands
                     TreatmentId = treatment.Id,
                     Anamnesis = s.Anamnesis,
                     AnamnesisDate = s.AnamnesisDate,
+
                     PreviousDiseases = s.PreviousDiseases,
                     MedicationUsage = s.MedicationUsage,
+                    PastSurgeries = s.PastSurgeries,
+                    HereditaryDiseases = s.HereditaryDiseases,
+
                     HasAllergy = s.HasAllergy,
                     UsesAlcohol = s.UsesAlcohol,
                     Smokes = s.Smokes,
+
                     PhysicalExamination = s.PhysicalExamination,
                     PlanNotes = s.PlanNotes,
                     NextVisitDate = s.NextVisitDate
@@ -120,12 +131,13 @@ namespace Doctor.Application.CQRS.Treatments.Commands
                 await _surveyRepo.AddAsync(survey);
                 await _surveyRepo.SaveAsync();
 
-                // Fayllar
-                if (s.Files != null)
+                // FILES
+                if (s.Files is not null && s.Files.Count > 0)
                 {
                     foreach (var file in s.Files)
                     {
                         var path = await _fileService.UploadAsync(file, "treatment-surveys");
+
                         await _fileRepo.AddAsync(new TreatmentSurveyFile
                         {
                             TreatmentSurveyId = survey.Id,
@@ -136,11 +148,13 @@ namespace Doctor.Application.CQRS.Treatments.Commands
                     await _fileRepo.SaveAsync();
                 }
 
-                // Dietlər
-                if (s.SelectedDietIds != null)
+                // DIETS — FIXED
+                if (s.SelectedDietIds is not null)
                 {
                     foreach (var id in s.SelectedDietIds)
                     {
+                        if (id <= 0) continue;  // 🔥 FK ERROR FIX
+
                         await _dietRepo.AddAsync(new TreatmentSurveyDiet
                         {
                             TreatmentSurveyId = survey.Id,
@@ -150,11 +164,13 @@ namespace Doctor.Application.CQRS.Treatments.Commands
                     await _dietRepo.SaveAsync();
                 }
 
-                // Reseptlər
-                if (s.SelectedPrescriptionIds != null)
+                // PRESCRIPTIONS — FIXED
+                if (s.SelectedPrescriptionIds is not null)
                 {
                     foreach (var id in s.SelectedPrescriptionIds)
                     {
+                        if (id <= 0) continue;  // 🔥 FK ERROR FIX
+
                         await _presRepo.AddAsync(new TreatmentSurveyPrescription
                         {
                             TreatmentSurveyId = survey.Id,

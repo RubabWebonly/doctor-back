@@ -14,6 +14,9 @@ namespace Doctor.Infrastructure.Persistence
         }
 
         // ===================== DbSets =====================
+        public DbSet<ForDiet> ForDiets { get; set; }
+        public DbSet<ForPrescription>ForPrescriptions { get; set; }
+
         public DbSet<SystemSetting> SystemSettings { get; set; }
         public DbSet<AppointmentSlot> AppointmentSlots { get; set; }
         public DbSet<Appointment> Appointments { get; set; }

@@ -452,3 +452,4 @@ C:\Users\User\Desktop\DoctorBack\Doctor\Doctor\obj\Debug\net8.0\refint\Doctor.dl
 C:\Users\User\Desktop\DoctorBack\Doctor\Doctor\obj\Debug\net8.0\Doctor.pdb
 C:\Users\User\Desktop\DoctorBack\Doctor\Doctor\obj\Debug\net8.0\Doctor.genruntimeconfig.cache
 C:\Users\User\Desktop\DoctorBack\Doctor\Doctor\obj\Debug\net8.0\ref\Doctor.dll
+C:\Users\User\Desktop\DoctorBack\Doctor\Doctor\obj\Debug\net8.0\Doctor.sourcelink.json

@@ -480,6 +480,90 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Doctor.API.Controllers.ForDietController",
+    "Method": "Create",
+    "RelativePath": "api/ForDiet/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "Doctor.Application.CQRS.ForDiets.Commands.CreateForDietCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.API.Controllers.ForDietController",
+    "Method": "Delete",
+    "RelativePath": "api/ForDiet/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.API.Controllers.ForDietController",
+    "Method": "GetAll",
+    "RelativePath": "api/ForDiet/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.ForPrescriptionController",
+    "Method": "Delete",
+    "RelativePath": "api/ForPrescription/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.ForPrescriptionController",
+    "Method": "Create",
+    "RelativePath": "api/ForPrescription/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "Doctor.Application.CQRS.ForPrescriptions.Commands.CreateForPrescriptionCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor.Controllers.ForPrescriptionController",
+    "Method": "GetAll",
+    "RelativePath": "api/ForPrescription/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "MedicineController",
     "Method": "Delete",
     "RelativePath": "api/Medicine/{id}",
@@ -977,6 +1061,11 @@
         "IsRequired": false
       },
       {
+        "Name": "Complaint",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
         "Name": "Notes",
         "Type": "System.String",
         "IsRequired": false
@@ -1086,6 +1175,11 @@
       {
         "Name": "DiagnosisId",
         "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Complaint",
+        "Type": "System.String",
         "IsRequired": false
       },
       {

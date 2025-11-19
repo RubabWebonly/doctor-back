@@ -70,3 +70,4 @@ C:\Users\User\Desktop\DoctorBack\Doctor\Doctor.Application\obj\Debug\net8.0\refi
 C:\Users\User\Desktop\DoctorBack\Doctor\Doctor.Application\obj\Debug\net8.0\Doctor.Application.pdb
 C:\Users\User\Desktop\DoctorBack\Doctor\Doctor.Application\obj\Debug\net8.0\Doctor.Application.genruntimeconfig.cache
 C:\Users\User\Desktop\DoctorBack\Doctor\Doctor.Application\obj\Debug\net8.0\ref\Doctor.Application.dll
+C:\Users\User\Desktop\DoctorBack\Doctor\Doctor.Application\obj\Debug\net8.0\Doctor.Application.sourcelink.json

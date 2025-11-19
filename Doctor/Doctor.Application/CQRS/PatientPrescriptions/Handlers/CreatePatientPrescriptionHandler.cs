@@ -34,7 +34,7 @@ namespace Doctor.Application.CQRS.PatientPrescriptions.Handlers
                 phone: req.PhoneNumber,
                 date: req.Date,
                 diagnosis: req.Diagnosis ?? string.Empty,
-                diets: req.Diets,
+                  items: req.Diets,
                 basePath: basePath
             );
 
@@ -52,7 +52,7 @@ namespace Doctor.Application.CQRS.PatientPrescriptions.Handlers
                 Date = req.Date,
                 Diagnosis = req.Diagnosis,
                 FilePath = relativePath,
-                PdfName = fileName,
+                PdfName = req.PdfName,
                 Diets = req.Diets ?? new List<string>()
             };
 

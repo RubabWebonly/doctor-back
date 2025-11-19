@@ -10,6 +10,7 @@ public class Treatment : BaseEntity
 
     public int DiagnosisId { get; set; }
     public Diagnosis Diagnosis { get; set; }
+    public string? Complaint { get; set; }
 
     public DateTime Date { get; set; } = DateTime.UtcNow;
     public string? Notes { get; set; }

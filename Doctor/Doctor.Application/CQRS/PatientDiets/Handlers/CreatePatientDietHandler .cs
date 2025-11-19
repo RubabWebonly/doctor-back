@@ -33,6 +33,7 @@ namespace Doctor.Application.CQRS.PatientDiets.Handlers
                 doctorName: req.DoctorFullName,
                 phone: req.PhoneNumber,
                 date: req.Date,
+
                 diagnosis: req.Diagnosis ?? string.Empty,
                 diets: req.Diets,
                 basePath: basePath
@@ -45,6 +46,7 @@ namespace Doctor.Application.CQRS.PatientDiets.Handlers
 
             var entity = new PatientDiet
             {
+
                 PatientId = req.PatientId,
                 PatientFullName = req.PatientFullName,
                 DoctorFullName = req.DoctorFullName,
@@ -52,7 +54,7 @@ namespace Doctor.Application.CQRS.PatientDiets.Handlers
                 Date = req.Date,
                 Diagnosis = req.Diagnosis,
                 FilePath = relativePath,
-                PdfName = fileName,
+                PdfName = req.PdfName,
                 Diets = req.Diets ?? new List<string>()
             };
 

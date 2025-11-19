@@ -21,6 +21,9 @@
 
         public string? PhysicalExamination { get; set; }
         public string? PlanNotes { get; set; }
+        public string? PastSurgeries { get; set; }
+        public string? HereditaryDiseases { get; set; }
+
 
         public DateTime? NextVisitDate { get; set; }
     }

@@ -74,3 +74,4 @@ C:\Users\User\Desktop\DoctorBack\Doctor\Doctor.Infrastructure\obj\Debug\net8.0\r
 C:\Users\User\Desktop\DoctorBack\Doctor\Doctor.Infrastructure\obj\Debug\net8.0\Doctor.Infrastructure.pdb
 C:\Users\User\Desktop\DoctorBack\Doctor\Doctor.Infrastructure\obj\Debug\net8.0\Doctor.Infrastructure.genruntimeconfig.cache
 C:\Users\User\Desktop\DoctorBack\Doctor\Doctor.Infrastructure\obj\Debug\net8.0\ref\Doctor.Infrastructure.dll
+C:\Users\User\Desktop\DoctorBack\Doctor\Doctor.Infrastructure\obj\Debug\net8.0\Doctor.Infrastructure.sourcelink.json

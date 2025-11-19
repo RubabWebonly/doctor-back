@@ -33,6 +33,7 @@
     <Folder Include="wwwroot\uploads\patient-diets\" />
     <Folder Include="wwwroot\uploads\patient-prescriptions\" />
     <Folder Include="wwwroot\uploads\treatments\" />
+    <Folder Include="wwwroot\uploads\uploads\diets\" />
     <Folder Include="wwwroot\uploads\uploads\prescriptions\" />
   </ItemGroup>
 

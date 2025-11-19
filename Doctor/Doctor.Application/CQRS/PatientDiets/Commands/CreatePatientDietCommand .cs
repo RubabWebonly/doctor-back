@@ -10,6 +10,7 @@ namespace Doctor.Application.CQRS.PatientDiets.Commands
         public string PhoneNumber { get; set; } = default!;
         public DateTime Date { get; set; }
         public string? Diagnosis { get; set; }
+        public string PdfName { get; set; } = default!;
         public List<string>? Diets { get; set; }
     }
 }

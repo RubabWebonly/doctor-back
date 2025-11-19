@@ -201,6 +201,112 @@ namespace Doctor.Infrastructure.Migrations
                     b.ToTable("Diets");
                 });
 
+            modelBuilder.Entity("Doctor.Domain.Entities.ForDiet", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Diagnosis")
+                        .HasColumnType("TEXT");
+
+                    b.PrimitiveCollection<string>("Diets")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("DoctorFullName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FilePath")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("PatientFullName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("PatientId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("PdfName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ForDiets");
+                });
+
+            modelBuilder.Entity("Doctor.Domain.Entities.ForPrescription", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Diagnosis")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("DoctorFullName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FilePath")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("PatientFullName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("PatientId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("PdfName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.PrimitiveCollection<string>("Prescriptions")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ForPrescriptions");
+                });
+
             modelBuilder.Entity("Doctor.Domain.Entities.Patient", b =>
                 {
                     b.Property<int>("Id")
@@ -552,6 +658,9 @@ namespace Doctor.Infrastructure.Migrations
                     b.Property<bool>("HasAllergy")
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("HereditaryDiseases")
+                        .HasColumnType("TEXT");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("INTEGER");
 
@@ -559,6 +668,9 @@ namespace Doctor.Infrastructure.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime?>("NextVisitDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PastSurgeries")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("PhysicalExamination")
@@ -799,11 +911,11 @@ namespace Doctor.Infrastructure.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2025, 11, 17, 7, 34, 52, 938, DateTimeKind.Utc).AddTicks(9843),
+                            CreatedDate = new DateTime(2025, 11, 19, 19, 58, 27, 188, DateTimeKind.Utc).AddTicks(4693),
                             Email = "rubabhuseynova013@gmail.com",
                             FullName = "Dr. Cavanşir Vahabov",
                             IsDeleted = false,
-                            PasswordHash = "AQAAAAIAAYagAAAAEOh/d8Po4HIJ9KRhHggEdPzPrtXVUALpzAadAEuccwUiRl3sZm+Jyk45U8f6Mtz6eA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEEvKyq7KhTO5woMPfVkZG9YgQC5hJQPDsc8JIuXIzNshVy+mG7QZzOWx4Mqc29fBkw==",
                             PhoneNumber = "+9940104149525"
                         });
                 });
@@ -843,6 +955,9 @@ namespace Doctor.Infrastructure.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("Complaint")
+                        .HasColumnType("TEXT");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("TEXT");
