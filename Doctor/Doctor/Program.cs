@@ -1,4 +1,4 @@
-using Application.Interfaces.Repositories;
+﻿using Application.Interfaces.Repositories;
 using Application.Interfaces.Services;
 using Doctor.Application.Interfaces.Repositories;
 using Doctor.Application.Interfaces.Services;
@@ -80,26 +80,14 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseCors("AllowAll");
-app.UseStaticFiles();
-app.UseStaticFiles(new StaticFileOptions
-{
-    FileProvider = new PhysicalFileProvider(
-        Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", "for-diets")),
-    RequestPath = "/uploads/for-diets"
-});
+app.UseStaticFiles(); // wwwroot üçün
 
 app.UseStaticFiles(new StaticFileOptions
 {
     FileProvider = new PhysicalFileProvider(
-        Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", "patient-diets")),
-    RequestPath = "/uploads/patient-diets"
-});
-
-app.UseStaticFiles(new StaticFileOptions
-{
-    FileProvider = new PhysicalFileProvider(
-        Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", "for-prescriptions")),
-    RequestPath = "/uploads/for-prescriptions"
+        Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads")
+    ),
+    RequestPath = "/upload" // URL-də upload prefix-i üçün
 });
 
 

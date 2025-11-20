@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7A497348-BCF0-477D-98ED-DF9A242B11AA}|Doctor\\Doctor.csproj|c:\\users\\user\\desktop\\doctor-back\\doctor\\doctor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A497348-BCF0-477D-98ED-DF9A242B11AA}|Doctor\\Doctor.csproj|solutionrelative:doctor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{425DC2F1-67F4-4908-B825-A56FF4498E1D}|Doctor.Infrastructure\\Doctor.Infrastructure.csproj|c:\\users\\user\\desktop\\doctor-back\\doctor\\doctor.infrastructure\\persistence\\repositories\\treatmentrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{425DC2F1-67F4-4908-B825-A56FF4498E1D}|Doctor.Infrastructure\\Doctor.Infrastructure.csproj|solutionrelative:doctor.infrastructure\\persistence\\repositories\\treatmentrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{425DC2F1-67F4-4908-B825-A56FF4498E1D}|Doctor.Infrastructure\\Doctor.Infrastructure.csproj|c:\\users\\user\\desktop\\doctor-back\\doctor\\doctor.infrastructure\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{425DC2F1-67F4-4908-B825-A56FF4498E1D}|Doctor.Infrastructure\\Doctor.Infrastructure.csproj|solutionrelative:doctor.infrastructure\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -43,10 +51,6 @@
       "RelativeMoniker": "D:0:0:{7A497348-BCF0-477D-98ED-DF9A242B11AA}|Doctor\\Doctor.csproj|solutionrelative:doctor\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A497348-BCF0-477D-98ED-DF9A242B11AA}|Doctor\\Doctor.csproj|c:\\users\\user\\desktop\\doctor-back\\doctor\\doctor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A497348-BCF0-477D-98ED-DF9A242B11AA}|Doctor\\Doctor.csproj|solutionrelative:doctor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F941939B-7CCC-480D-8D4C-8FBB4E5B7085}|Doctor.Application\\Doctor.Application.csproj|c:\\users\\user\\desktop\\doctor-back\\doctor\\doctor.application\\interfaces\\repositories\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F941939B-7CCC-480D-8D4C-8FBB4E5B7085}|Doctor.Application\\Doctor.Application.csproj|solutionrelative:doctor.application\\interfaces\\repositories\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -79,10 +83,6 @@
       "RelativeMoniker": "D:0:0:{F941939B-7CCC-480D-8D4C-8FBB4E5B7085}|Doctor.Application\\Doctor.Application.csproj|solutionrelative:doctor.application\\interfaces\\repositories\\itreatmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{425DC2F1-67F4-4908-B825-A56FF4498E1D}|Doctor.Infrastructure\\Doctor.Infrastructure.csproj|c:\\users\\user\\desktop\\doctor-back\\doctor\\doctor.infrastructure\\persistence\\repositories\\treatmentrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{425DC2F1-67F4-4908-B825-A56FF4498E1D}|Doctor.Infrastructure\\Doctor.Infrastructure.csproj|solutionrelative:doctor.infrastructure\\persistence\\repositories\\treatmentrepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{59A24A89-1705-402E-8F21-B96CE476CF96}|Doctor.Domain\\Doctor.Domain.csproj|c:\\users\\user\\desktop\\doctor-back\\doctor\\doctor.domain\\entities\\patientdiet .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59A24A89-1705-402E-8F21-B96CE476CF96}|Doctor.Domain\\Doctor.Domain.csproj|solutionrelative:doctor.domain\\entities\\patientdiet .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -93,10 +93,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F941939B-7CCC-480D-8D4C-8FBB4E5B7085}|Doctor.Application\\Doctor.Application.csproj|c:\\users\\user\\desktop\\doctor-back\\doctor\\doctor.application\\cqrs\\treatments\\queries\\getalltreatmentsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F941939B-7CCC-480D-8D4C-8FBB4E5B7085}|Doctor.Application\\Doctor.Application.csproj|solutionrelative:doctor.application\\cqrs\\treatments\\queries\\getalltreatmentsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Migrations\\20251120114448_NewData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Doctor.Infrastructure\\Migrations\\20251120114448_NewData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{425DC2F1-67F4-4908-B825-A56FF4498E1D}|Doctor.Infrastructure\\Doctor.Infrastructure.csproj|c:\\users\\user\\desktop\\doctor-back\\doctor\\doctor.infrastructure\\persistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -853,6 +849,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{425DC2F1-67F4-4908-B825-A56FF4498E1D}|Doctor.Infrastructure\\Doctor.Infrastructure.csproj|c:\\users\\user\\desktop\\doctor-back\\doctor\\doctor.infrastructure\\migrations\\20251119185927_addfordiettable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{425DC2F1-67F4-4908-B825-A56FF4498E1D}|Doctor.Infrastructure\\Doctor.Infrastructure.csproj|solutionrelative:doctor.infrastructure\\migrations\\20251119185927_addfordiettable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{425DC2F1-67F4-4908-B825-A56FF4498E1D}|Doctor.Infrastructure\\Doctor.Infrastructure.csproj|c:\\users\\user\\desktop\\doctor-back\\doctor\\doctor.infrastructure\\migrations\\20251120114448_newdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{425DC2F1-67F4-4908-B825-A56FF4498E1D}|Doctor.Infrastructure\\Doctor.Infrastructure.csproj|solutionrelative:doctor.infrastructure\\migrations\\20251120114448_newdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -862,7 +862,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -879,32 +879,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "GetAllPatientDietsHandler.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\PatientDiets\\Handlers\\GetAllPatientDietsHandler.cs",
-              "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\PatientDiets\\Handlers\\GetAllPatientDietsHandler.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\PatientDiets\\Handlers\\GetAllPatientDietsHandler.cs",
-              "RelativeToolTip": "Doctor.Application\\CQRS\\PatientDiets\\Handlers\\GetAllPatientDietsHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T06:21:10.46Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UpdateTreatmentCommand.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Treatments\\Commands\\UpdateTreatmentCommand.cs",
-              "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Treatments\\Commands\\UpdateTreatmentCommand.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Treatments\\Commands\\UpdateTreatmentCommand.cs",
-              "RelativeToolTip": "Doctor.Application\\CQRS\\Treatments\\Commands\\UpdateTreatmentCommand.cs",
-              "ViewState": "AgIAAAYBAAAAAAAAAAAowBwBAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T20:57:17.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "TreatmentController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\Controllers\\TreatmentController.cs",
               "RelativeDocumentMoniker": "Doctor\\Controllers\\TreatmentController.cs",
@@ -912,12 +886,11 @@
               "RelativeToolTip": "Doctor\\Controllers\\TreatmentController.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T09:52:27.942Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T09:52:27.942Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "CreateTreatmentCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Treatments\\Commands\\CreateTreatmentCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Treatments\\Commands\\CreateTreatmentCommand.cs",
@@ -925,12 +898,11 @@
               "RelativeToolTip": "Doctor.Application\\CQRS\\Treatments\\Commands\\CreateTreatmentCommand.cs",
               "ViewState": "AgIAAIsAAAAAAAAAAAAYwJgAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T08:02:47.719Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T08:02:47.719Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "IFileService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\Interfaces\\Services\\IFileService.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\Interfaces\\Services\\IFileService.cs",
@@ -938,25 +910,73 @@
               "RelativeToolTip": "Doctor.Application\\Interfaces\\Services\\IFileService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T09:17:26.723Z",
+              "WhenOpened": "2025-11-03T09:17:26.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TreatmentRepository .cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Persistence\\Repositories\\TreatmentRepository .cs",
+              "RelativeDocumentMoniker": "Doctor.Infrastructure\\Persistence\\Repositories\\TreatmentRepository .cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Persistence\\Repositories\\TreatmentRepository .cs",
+              "RelativeToolTip": "Doctor.Infrastructure\\Persistence\\Repositories\\TreatmentRepository .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T09:54:35.742Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FileService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Services\\FileService.cs",
-              "RelativeDocumentMoniker": "Doctor.Infrastructure\\Services\\FileService.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Services\\FileService.cs*",
-              "RelativeToolTip": "Doctor.Infrastructure\\Services\\FileService.cs*",
-              "ViewState": "AgIAADIAAAAAAAAAAAAgwFAAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\Program.cs",
+              "RelativeDocumentMoniker": "Doctor\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\Program.cs*",
+              "RelativeToolTip": "Doctor\\Program.cs*",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T09:16:23.369Z",
+              "WhenOpened": "2025-10-31T10:23:42.454Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "UpdateTreatmentCommand.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Treatments\\Commands\\UpdateTreatmentCommand.cs",
+              "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Treatments\\Commands\\UpdateTreatmentCommand.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Treatments\\Commands\\UpdateTreatmentCommand.cs",
+              "RelativeToolTip": "Doctor.Application\\CQRS\\Treatments\\Commands\\UpdateTreatmentCommand.cs",
+              "ViewState": "AgIAAAYBAAAAAAAAAAAowBwBAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T20:57:17.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FileService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Services\\FileService.cs",
+              "RelativeDocumentMoniker": "Doctor.Infrastructure\\Services\\FileService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Services\\FileService.cs",
+              "RelativeToolTip": "Doctor.Infrastructure\\Services\\FileService.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAgwFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T09:16:23.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GetAllPatientDietsHandler.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\PatientDiets\\Handlers\\GetAllPatientDietsHandler.cs",
+              "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\PatientDiets\\Handlers\\GetAllPatientDietsHandler.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\PatientDiets\\Handlers\\GetAllPatientDietsHandler.cs",
+              "RelativeToolTip": "Doctor.Application\\CQRS\\PatientDiets\\Handlers\\GetAllPatientDietsHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T06:21:10.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "CreatePatientDietHandler .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\PatientDiets\\Handlers\\CreatePatientDietHandler .cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\PatientDiets\\Handlers\\CreatePatientDietHandler .cs",
@@ -964,12 +984,11 @@
               "RelativeToolTip": "Doctor.Application\\CQRS\\PatientDiets\\Handlers\\CreatePatientDietHandler .cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAowDwAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T22:17:59.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T22:17:59.174Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "CreatePatientDietCommand .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\PatientDiets\\Commands\\CreatePatientDietCommand .cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\PatientDiets\\Commands\\CreatePatientDietCommand .cs",
@@ -977,12 +996,11 @@
               "RelativeToolTip": "Doctor.Application\\CQRS\\PatientDiets\\Commands\\CreatePatientDietCommand .cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T22:16:44.752Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T22:16:44.752Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "PatientDietController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\Controllers\\PatientDietController.cs",
               "RelativeDocumentMoniker": "Doctor\\Controllers\\PatientDietController.cs",
@@ -990,12 +1008,11 @@
               "RelativeToolTip": "Doctor\\Controllers\\PatientDietController.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAAwBMAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T22:17:09.436Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T22:17:09.436Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "PatientController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\Controllers\\PatientController.cs",
               "RelativeDocumentMoniker": "Doctor\\Controllers\\PatientController.cs",
@@ -1003,25 +1020,11 @@
               "RelativeToolTip": "Doctor\\Controllers\\PatientController.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAwwDwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T22:49:28.68Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-09T22:49:28.68Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\Program.cs",
-              "RelativeDocumentMoniker": "Doctor\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\Program.cs",
-              "RelativeToolTip": "Doctor\\Program.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAowGcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T10:23:42.454Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "IPatientRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\Interfaces\\Repositories\\IPatientRepository.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\Interfaces\\Repositories\\IPatientRepository.cs",
@@ -1029,12 +1032,11 @@
               "RelativeToolTip": "Doctor.Application\\Interfaces\\Repositories\\IPatientRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T09:53:20.773Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T09:53:20.773Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "GetAllPatientPrescriptionsHandler.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\PatientPrescriptions\\Handlers\\GetAllPatientPrescriptionsHandler.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\PatientPrescriptions\\Handlers\\GetAllPatientPrescriptionsHandler.cs",
@@ -1042,12 +1044,11 @@
               "RelativeToolTip": "Doctor.Application\\CQRS\\PatientPrescriptions\\Handlers\\GetAllPatientPrescriptionsHandler.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAkwDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T06:21:50.652Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T06:21:50.652Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "GetAllPatientPrescriptionsQuery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\PatientPrescriptions\\Queries\\GetAllPatientPrescriptionsQuery.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\PatientPrescriptions\\Queries\\GetAllPatientPrescriptionsQuery.cs",
@@ -1055,12 +1056,11 @@
               "RelativeToolTip": "Doctor.Application\\CQRS\\PatientPrescriptions\\Queries\\GetAllPatientPrescriptionsQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T22:06:25.736Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T22:06:25.736Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "GetTreatmentStatsQuery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Treatments\\Queries\\GetTreatmentStatsQuery.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Treatments\\Queries\\GetTreatmentStatsQuery.cs",
@@ -1068,12 +1068,11 @@
               "RelativeToolTip": "Doctor.Application\\CQRS\\Treatments\\Queries\\GetTreatmentStatsQuery.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAwwDwAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T09:17:03.587Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-06T09:17:03.587Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "GetAllPatientDietsQuery .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\PatientDiets\\Queries\\GetAllPatientDietsQuery .cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\PatientDiets\\Queries\\GetAllPatientDietsQuery .cs",
@@ -1081,12 +1080,11 @@
               "RelativeToolTip": "Doctor.Application\\CQRS\\PatientDiets\\Queries\\GetAllPatientDietsQuery .cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T06:20:51.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T06:20:51.84Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "PatientDietRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Persistence\\Repositories\\PatientDietRepository.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Persistence\\Repositories\\PatientDietRepository.cs",
@@ -1094,12 +1092,11 @@
               "RelativeToolTip": "Doctor.Infrastructure\\Persistence\\Repositories\\PatientDietRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T12:40:18.05Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-20T12:40:18.05Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "IPatientDietRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\Interfaces\\Repositories\\IPatientDietRepository.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\Interfaces\\Repositories\\IPatientDietRepository.cs",
@@ -1107,12 +1104,11 @@
               "RelativeToolTip": "Doctor.Application\\Interfaces\\Repositories\\IPatientDietRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T12:39:57.189Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-20T12:39:57.189Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "ITreatmentRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\Interfaces\\Repositories\\ITreatmentRepository.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\Interfaces\\Repositories\\ITreatmentRepository.cs",
@@ -1120,21 +1116,7 @@
               "RelativeToolTip": "Doctor.Application\\Interfaces\\Repositories\\ITreatmentRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T09:53:21.614Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "TreatmentRepository .cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Persistence\\Repositories\\TreatmentRepository .cs",
-              "RelativeDocumentMoniker": "Doctor.Infrastructure\\Persistence\\Repositories\\TreatmentRepository .cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Persistence\\Repositories\\TreatmentRepository .cs",
-              "RelativeToolTip": "Doctor.Infrastructure\\Persistence\\Repositories\\TreatmentRepository .cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwD8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T09:54:35.742Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T09:53:21.614Z"
             },
             {
               "$type": "Document",
@@ -1146,8 +1128,7 @@
               "RelativeToolTip": "Doctor.Domain\\Entities\\PatientDiet .cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T22:03:52.06Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T22:03:52.06Z"
             },
             {
               "$type": "Document",
@@ -1159,8 +1140,7 @@
               "RelativeToolTip": "Doctor.Application\\CQRS\\Treatments\\Queries\\GetTreatmentByIdQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T20:57:30.932Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T20:57:30.932Z"
             },
             {
               "$type": "Document",
@@ -1172,12 +1152,11 @@
               "RelativeToolTip": "Doctor.Application\\CQRS\\Treatments\\Queries\\GetAllTreatmentsQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T20:57:28.02Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T20:57:28.02Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 214,
               "Title": "20251120114448_NewData.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Migrations\\20251120114448_NewData.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Migrations\\20251120114448_NewData.cs",
@@ -1185,12 +1164,11 @@
               "RelativeToolTip": "Doctor.Infrastructure\\Migrations\\20251120114448_NewData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T11:44:48.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-20T11:44:48.377Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "TreatmentSurveyPrescription .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\TreatmentSurveyPrescription .cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\TreatmentSurveyPrescription .cs",
@@ -1198,12 +1176,11 @@
               "RelativeToolTip": "Doctor.Domain\\Entities\\TreatmentSurveyPrescription .cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T21:05:44.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T21:05:44.26Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "TreatmentSurveyDiet .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\TreatmentSurveyDiet .cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\TreatmentSurveyDiet .cs",
@@ -1211,12 +1188,11 @@
               "RelativeToolTip": "Doctor.Domain\\Entities\\TreatmentSurveyDiet .cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T21:05:22.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T21:05:22.616Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "TreatmentSurveyFile .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\TreatmentSurveyFile .cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\TreatmentSurveyFile .cs",
@@ -1224,12 +1200,11 @@
               "RelativeToolTip": "Doctor.Domain\\Entities\\TreatmentSurveyFile .cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T21:05:01.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T21:05:01.397Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "TreatmentPrescription.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\TreatmentPrescription.cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\TreatmentPrescription.cs",
@@ -1237,12 +1212,11 @@
               "RelativeToolTip": "Doctor.Domain\\Entities\\TreatmentPrescription.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T08:58:35.691Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T08:58:35.691Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Persistence\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Persistence\\AppDbContext.cs",
@@ -1250,12 +1224,11 @@
               "RelativeToolTip": "Doctor.Infrastructure\\Persistence\\AppDbContext.cs",
               "ViewState": "AgIAADcAAAAAAAAAAAAwwE0AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T09:36:42.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T09:36:42.606Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 28,
               "Title": "TreatmentDiet .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\TreatmentDiet .cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\TreatmentDiet .cs",
@@ -1263,12 +1236,11 @@
               "RelativeToolTip": "Doctor.Domain\\Entities\\TreatmentDiet .cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T09:32:47.933Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T09:32:47.933Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 29,
               "Title": "PatientPrescription .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\PatientPrescription .cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\PatientPrescription .cs",
@@ -1276,12 +1248,11 @@
               "RelativeToolTip": "Doctor.Domain\\Entities\\PatientPrescription .cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T22:03:21.195Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T22:03:21.195Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "TreatmentSurvey .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\TreatmentSurvey .cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\TreatmentSurvey .cs",
@@ -1289,12 +1260,11 @@
               "RelativeToolTip": "Doctor.Domain\\Entities\\TreatmentSurvey .cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T21:06:05.879Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T21:06:05.879Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 31,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Persistence\\Repositories\\GenericRepository.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Persistence\\Repositories\\GenericRepository.cs",
@@ -1306,7 +1276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 32,
               "Title": "IGenericRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\Interfaces\\Repositories\\IGenericRepository.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\Interfaces\\Repositories\\IGenericRepository.cs",
@@ -1318,7 +1288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 33,
               "Title": "CreateForDietHandler.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\ForDiet\\Handler\\CreateForDietHandler.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\ForDiet\\Handler\\CreateForDietHandler.cs",
@@ -1330,7 +1300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 34,
               "Title": "CreateForDietCommand .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\ForDiet\\Commands\\CreateForDietCommand .cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\ForDiet\\Commands\\CreateForDietCommand .cs",
@@ -1342,7 +1312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 35,
               "Title": "CreateForPrescriptionHandler .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\ForPrescriptions\\Handlers\\CreateForPrescriptionHandler .cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\ForPrescriptions\\Handlers\\CreateForPrescriptionHandler .cs",
@@ -1354,7 +1324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 36,
               "Title": "DeleteForPrescriptionHandler.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\ForPrescriptions\\Handlers\\DeleteForPrescriptionHandler.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\ForPrescriptions\\Handlers\\DeleteForPrescriptionHandler.cs",
@@ -1366,7 +1336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 37,
               "Title": "CreateForPrescriptionCommand .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\ForPrescriptions\\Commands\\CreateForPrescriptionCommand .cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\ForPrescriptions\\Commands\\CreateForPrescriptionCommand .cs",
@@ -1378,7 +1348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 213,
+              "DocumentIndex": 212,
               "Title": "20251119195827_AddForPresTable.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Migrations\\20251119195827_AddForPresTable.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Migrations\\20251119195827_AddForPresTable.cs",
@@ -1390,7 +1360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 38,
               "Title": "ForPrescriptionController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\Controllers\\ForPrescriptionController.cs",
               "RelativeDocumentMoniker": "Doctor\\Controllers\\ForPrescriptionController.cs",
@@ -1402,7 +1372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 39,
               "Title": "GetAllForPrescriptionsHandler.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\ForPrescriptions\\Handlers\\GetAllForPrescriptionsHandler.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\ForPrescriptions\\Handlers\\GetAllForPrescriptionsHandler.cs",
@@ -1414,7 +1384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 40,
               "Title": "PatientPrescriptionDocument.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\Interfaces\\Services\\Documents\\PatientPrescriptionDocument.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\Interfaces\\Services\\Documents\\PatientPrescriptionDocument.cs",
@@ -1426,7 +1396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 41,
               "Title": "DeleteForPrescriptionCommand .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\ForPrescriptions\\Commands\\DeleteForPrescriptionCommand .cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\ForPrescriptions\\Commands\\DeleteForPrescriptionCommand .cs",
@@ -1438,7 +1408,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 42,
               "Title": "PatientDietDocument .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\Interfaces\\Services\\Documents\\PatientDietDocument .cs",
               "RelativeDocumentMoniker": "Doctor.Application\\Interfaces\\Services\\Documents\\PatientDietDocument .cs",
@@ -1450,7 +1420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 43,
               "Title": "GetAllForPrescriptionsQuery .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\ForPrescriptions\\Queries\\GetAllForPrescriptionsQuery .cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\ForPrescriptions\\Queries\\GetAllForPrescriptionsQuery .cs",
@@ -1462,7 +1432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 49,
               "Title": "GetAllForDietsHandler.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\ForDiet\\Handler\\GetAllForDietsHandler.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\ForDiet\\Handler\\GetAllForDietsHandler.cs",
@@ -1474,7 +1444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 48,
               "Title": "GetAllForDietsQuery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\ForDiet\\Query\\GetAllForDietsQuery.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\ForDiet\\Query\\GetAllForDietsQuery.cs",
@@ -1486,7 +1456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 47,
               "Title": "Prescription .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\Prescription .cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\Prescription .cs",
@@ -1498,7 +1468,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 46,
               "Title": "Diet .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\Diet .cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\Diet .cs",
@@ -1510,7 +1480,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 45,
               "Title": "ForDiet.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\ForDiet.cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\ForDiet.cs",
@@ -1522,7 +1492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 44,
               "Title": "ForPrescription.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\ForPrescription.cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\ForPrescription.cs",
@@ -1534,7 +1504,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 50,
               "Title": "DeleteForDietHandler.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\ForDiet\\Handler\\DeleteForDietHandler.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\ForDiet\\Handler\\DeleteForDietHandler.cs",
@@ -1546,7 +1516,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 51,
               "Title": "DeleteForDietCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\ForDiet\\Commands\\DeleteForDietCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\ForDiet\\Commands\\DeleteForDietCommand.cs",
@@ -1558,7 +1528,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 214,
+              "DocumentIndex": 213,
               "Title": "20251119185927_AddForDietTable.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Migrations\\20251119185927_AddForDietTable.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Migrations\\20251119185927_AddForDietTable.cs",
@@ -1570,7 +1540,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 52,
               "Title": "ForDietController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\Controllers\\ForDietController.cs",
               "RelativeDocumentMoniker": "Doctor\\Controllers\\ForDietController.cs",
@@ -1582,7 +1552,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 53,
               "Title": "DeletePatientDietHandler.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\PatientDiets\\Handlers\\DeletePatientDietHandler.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\PatientDiets\\Handlers\\DeletePatientDietHandler.cs",
@@ -1594,7 +1564,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 54,
               "Title": "DeletePatientDietCommand .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\PatientDiets\\Commands\\DeletePatientDietCommand .cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\PatientDiets\\Commands\\DeletePatientDietCommand .cs",
@@ -1606,7 +1576,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 55,
               "Title": "AppDbContextSeed.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Persistence\\AppDbContextSeed.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Persistence\\AppDbContextSeed.cs",
@@ -1618,7 +1588,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 56,
               "Title": "ClinicController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\Controllers\\ClinicController.cs",
               "RelativeDocumentMoniker": "Doctor\\Controllers\\ClinicController.cs",
@@ -1630,7 +1600,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 57,
               "Title": "Treatment .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\Treatment .cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\Treatment .cs",
@@ -1642,7 +1612,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 58,
               "Title": "DietController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\Controllers\\DietController.cs",
               "RelativeDocumentMoniker": "Doctor\\Controllers\\DietController.cs",
@@ -1654,7 +1624,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 59,
               "Title": "PrescriptionController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\Controllers\\PrescriptionController.cs",
               "RelativeDocumentMoniker": "Doctor\\Controllers\\PrescriptionController.cs",
@@ -1666,7 +1636,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 60,
               "Title": "PatientPrescriptionController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\Controllers\\PatientPrescriptionController.cs",
               "RelativeDocumentMoniker": "Doctor\\Controllers\\PatientPrescriptionController.cs",
@@ -1678,7 +1648,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 212,
+              "DocumentIndex": 211,
               "Title": "20251119115722_AddNewSimptom.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Migrations\\20251119115722_AddNewSimptom.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Migrations\\20251119115722_AddNewSimptom.cs",
@@ -1690,7 +1660,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 61,
               "Title": "DeleteTreatmentCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Treatments\\Commands\\DeleteTreatmentCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Treatments\\Commands\\DeleteTreatmentCommand.cs",
@@ -1702,7 +1672,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 62,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\User.cs",
@@ -1714,7 +1684,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 63,
               "Title": "TreatmentFile .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\TreatmentFile .cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\TreatmentFile .cs",
@@ -1726,7 +1696,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 64,
               "Title": "AppointmentSlot .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\AppointmentSlot .cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\AppointmentSlot .cs",
@@ -1738,7 +1708,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 65,
               "Title": "CreateAppointmentCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Appointments\\Commands\\CreateAppointmentCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Appointments\\Commands\\CreateAppointmentCommand.cs",
@@ -1750,7 +1720,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 66,
               "Title": "Appointment .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\Appointment .cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\Appointment .cs",
@@ -1762,7 +1732,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 67,
               "Title": "IAppointmentSlotRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\Interfaces\\Repositories\\IAppointmentSlotRepository.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\Interfaces\\Repositories\\IAppointmentSlotRepository.cs",
@@ -1774,7 +1744,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 68,
               "Title": "CreatePatientPrescriptionHandler.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\PatientPrescriptions\\Handlers\\CreatePatientPrescriptionHandler.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\PatientPrescriptions\\Handlers\\CreatePatientPrescriptionHandler.cs",
@@ -1786,7 +1756,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 69,
               "Title": "CreatePatientPrescriptionCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\PatientPrescriptions\\Commands\\CreatePatientPrescriptionCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\PatientPrescriptions\\Commands\\CreatePatientPrescriptionCommand.cs",
@@ -1798,7 +1768,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 70,
               "Title": "logo.png",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\wwwroot\\templates\\logo.png",
               "RelativeDocumentMoniker": "Doctor\\wwwroot\\templates\\logo.png",
@@ -1809,7 +1779,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 71,
               "Title": "fordiet.png",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\wwwroot\\templates\\fordiet.png",
               "RelativeDocumentMoniker": "Doctor\\wwwroot\\templates\\fordiet.png",
@@ -1820,7 +1790,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 72,
               "Title": "DeletePatientPrescriptionHandler.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\PatientPrescriptions\\Handlers\\DeletePatientPrescriptionHandler.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\PatientPrescriptions\\Handlers\\DeletePatientPrescriptionHandler.cs",
@@ -1832,7 +1802,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 73,
               "Title": "DeletePatientPrescriptionCommand .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\PatientPrescriptions\\Commands\\DeletePatientPrescriptionCommand .cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\PatientPrescriptions\\Commands\\DeletePatientPrescriptionCommand .cs",
@@ -1844,7 +1814,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 74,
               "Title": "MedicineController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\Controllers\\MedicineController.cs",
               "RelativeDocumentMoniker": "Doctor\\Controllers\\MedicineController.cs",
@@ -1856,7 +1826,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 75,
               "Title": "20251117073453_AddCategories.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Migrations\\20251117073453_AddCategories.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Migrations\\20251117073453_AddCategories.cs",
@@ -1868,7 +1838,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 76,
               "Title": "20251108050130_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Migrations\\20251108050130_InitialCreate.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Migrations\\20251108050130_InitialCreate.cs",
@@ -1880,7 +1850,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 77,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\Category.cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\Category.cs",
@@ -1892,7 +1862,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 78,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "Doctor\\Controllers\\CategoryController.cs",
@@ -1904,7 +1874,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 79,
               "Title": "GetAllCategoriesQueryHandler .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Categories\\Handler\\GetAllCategoriesQueryHandler .cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Categories\\Handler\\GetAllCategoriesQueryHandler .cs",
@@ -1916,7 +1886,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 80,
               "Title": "GetAllCategoriesQuery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Categories\\Query\\GetAllCategoriesQuery.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Categories\\Query\\GetAllCategoriesQuery.cs",
@@ -1928,7 +1898,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 81,
               "Title": "DeleteCategoryCommandHandler .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Categories\\Handler\\DeleteCategoryCommandHandler .cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Categories\\Handler\\DeleteCategoryCommandHandler .cs",
@@ -1940,7 +1910,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 82,
               "Title": "DeleteCategoryCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Categories\\Commands\\DeleteCategoryCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Categories\\Commands\\DeleteCategoryCommand.cs",
@@ -1952,7 +1922,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 83,
               "Title": "UpdateCategoryCommandHandler .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Categories\\Handler\\UpdateCategoryCommandHandler .cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Categories\\Handler\\UpdateCategoryCommandHandler .cs",
@@ -1964,7 +1934,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 84,
               "Title": "UpdateCategoryCommand .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Categories\\Commands\\UpdateCategoryCommand .cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Categories\\Commands\\UpdateCategoryCommand .cs",
@@ -1976,7 +1946,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 85,
               "Title": "CreateCategoryCommandHandler .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Categories\\Handler\\CreateCategoryCommandHandler .cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Categories\\Handler\\CreateCategoryCommandHandler .cs",
@@ -1988,7 +1958,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 86,
               "Title": "CreateCategoryCommand .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Categories\\Commands\\CreateCategoryCommand .cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Categories\\Commands\\CreateCategoryCommand .cs",
@@ -2000,7 +1970,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 87,
               "Title": "CategoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Persistence\\Repositories\\CategoryRepository.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Persistence\\Repositories\\CategoryRepository.cs",
@@ -2012,7 +1982,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 88,
               "Title": "ICategoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\Interfaces\\Repositories\\ICategoryRepository.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\Interfaces\\Repositories\\ICategoryRepository.cs",
@@ -2024,7 +1994,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 211,
+              "DocumentIndex": 210,
               "Title": "20251117072155_AddMedicine.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Migrations\\20251117072155_AddMedicine.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Migrations\\20251117072155_AddMedicine.cs",
@@ -2036,7 +2006,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 90,
               "Title": "AppDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Migrations\\AppDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Migrations\\AppDbContextModelSnapshot.cs",
@@ -2048,7 +2018,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 89,
               "Title": "GetAllMedicinesQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Medicines\\Handler\\GetAllMedicinesQueryHandler.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Medicines\\Handler\\GetAllMedicinesQueryHandler.cs",
@@ -2060,7 +2030,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 91,
               "Title": "GetAllMedicinesQuery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Medicines\\Query\\GetAllMedicinesQuery.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Medicines\\Query\\GetAllMedicinesQuery.cs",
@@ -2072,7 +2042,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 92,
               "Title": "DeleteMedicineCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Medicines\\Handler\\DeleteMedicineCommandHandler.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Medicines\\Handler\\DeleteMedicineCommandHandler.cs",
@@ -2084,7 +2054,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 93,
               "Title": "DeleteMedicineCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Medicines\\Commands\\DeleteMedicineCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Medicines\\Commands\\DeleteMedicineCommand.cs",
@@ -2096,7 +2066,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 94,
               "Title": "UpdateMedicineCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Medicines\\Handler\\UpdateMedicineCommandHandler.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Medicines\\Handler\\UpdateMedicineCommandHandler.cs",
@@ -2108,7 +2078,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 95,
               "Title": "UpdateMedicineCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Medicines\\Commands\\UpdateMedicineCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Medicines\\Commands\\UpdateMedicineCommand.cs",
@@ -2120,7 +2090,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 96,
               "Title": "CreateMedicineCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Medicines\\Handler\\CreateMedicineCommandHandler.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Medicines\\Handler\\CreateMedicineCommandHandler.cs",
@@ -2132,7 +2102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 97,
               "Title": "CreateMedicineCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Medicines\\Commands\\CreateMedicineCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Medicines\\Commands\\CreateMedicineCommand.cs",
@@ -2144,7 +2114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 98,
               "Title": "MedicineRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Persistence\\Repositories\\MedicineRepository.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Persistence\\Repositories\\MedicineRepository.cs",
@@ -2156,7 +2126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 99,
               "Title": "IMedicineRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\Interfaces\\Repositories\\IMedicineRepository.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\Interfaces\\Repositories\\IMedicineRepository.cs",
@@ -2168,7 +2138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 100,
               "Title": "Medicine.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\Medicine.cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\Medicine.cs",
@@ -2180,7 +2150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 103,
               "Title": "Service .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\Service .cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\Service .cs",
@@ -2192,7 +2162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 104,
               "Title": "AppointmentService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\AppointmentService.cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\AppointmentService.cs",
@@ -2204,7 +2174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 105,
               "Title": "UserProfile.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\UserProfile.cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\UserProfile.cs",
@@ -2216,7 +2186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 102,
               "Title": "Patient.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\Patient.cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\Patient.cs",
@@ -2228,7 +2198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
+              "DocumentIndex": 101,
               "Title": "Diagnosis .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\Diagnosis .cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\Diagnosis .cs",
@@ -2240,7 +2210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 106,
               "Title": "SystemSetting .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\SystemSetting .cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\SystemSetting .cs",
@@ -2252,7 +2222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
+              "DocumentIndex": 107,
               "Title": "Clinic.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\Clinic.cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\Clinic.cs",
@@ -2264,7 +2234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
+              "DocumentIndex": 108,
               "Title": "UserProfileController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\Controllers\\UserProfileController.cs",
               "RelativeDocumentMoniker": "Doctor\\Controllers\\UserProfileController.cs",
@@ -2276,7 +2246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 109,
               "Title": "UpsertUserProfileCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\UserProfiles\\Commands\\UpsertUserProfileCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\UserProfiles\\Commands\\UpsertUserProfileCommand.cs",
@@ -2288,7 +2258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 110,
               "Title": "UserProfileRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Persistence\\Repositories\\UserProfileRepository.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Persistence\\Repositories\\UserProfileRepository.cs",
@@ -2300,7 +2270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 111,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Persistence\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Persistence\\Repositories\\UserRepository.cs",
@@ -2312,7 +2282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 112,
               "Title": "GetUserProfileQuery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\UserProfiles\\Queries\\GetUserProfileQuery.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\UserProfiles\\Queries\\GetUserProfileQuery.cs",
@@ -2324,7 +2294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
+              "DocumentIndex": 113,
               "Title": "LoginCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Auth\\Commands\\LoginCommandHandler.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Auth\\Commands\\LoginCommandHandler.cs",
@@ -2336,7 +2306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 115,
+              "DocumentIndex": 114,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Doctor\\Controllers\\AuthController.cs",
@@ -2348,7 +2318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 116,
+              "DocumentIndex": 115,
               "Title": "LoginResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Auth\\Commands\\LoginResponseDto.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Auth\\Commands\\LoginResponseDto.cs",
@@ -2360,7 +2330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 117,
+              "DocumentIndex": 116,
               "Title": "LoginCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Auth\\Commands\\LoginCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Auth\\Commands\\LoginCommand.cs",
@@ -2372,7 +2342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 118,
+              "DocumentIndex": 117,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Services\\EmailService.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Services\\EmailService.cs",
@@ -2384,7 +2354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 119,
+              "DocumentIndex": 118,
               "Title": "EmailSettings.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Email\\EmailSettings.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Email\\EmailSettings.cs",
@@ -2396,7 +2366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 120,
+              "DocumentIndex": 119,
               "Title": "UserConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Configurations\\UserConfiguration.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Configurations\\UserConfiguration.cs",
@@ -2408,7 +2378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 121,
+              "DocumentIndex": 120,
               "Title": "IUserProfileRepository .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\Interfaces\\Repositories\\IUserProfileRepository .cs",
               "RelativeDocumentMoniker": "Doctor.Application\\Interfaces\\Repositories\\IUserProfileRepository .cs",
@@ -2420,7 +2390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 122,
+              "DocumentIndex": 121,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\Interfaces\\Repositories\\IUserRepository.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\Interfaces\\Repositories\\IUserRepository.cs",
@@ -2432,7 +2402,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 123,
+              "DocumentIndex": 122,
               "Title": "ForgotPasswordCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Auth\\Commands\\ForgotPasswordCommandHandler.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Auth\\Commands\\ForgotPasswordCommandHandler.cs",
@@ -2444,7 +2414,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 124,
+              "DocumentIndex": 123,
               "Title": "ForgotPasswordCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Auth\\Commands\\ForgotPasswordCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Auth\\Commands\\ForgotPasswordCommand.cs",
@@ -2456,7 +2426,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 125,
+              "DocumentIndex": 124,
               "Title": "ResetPasswordCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Auth\\Commands\\ResetPasswordCommandHandler.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Auth\\Commands\\ResetPasswordCommandHandler.cs",
@@ -2468,7 +2438,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 126,
+              "DocumentIndex": 125,
               "Title": "ResetPasswordCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Auth\\Commands\\ResetPasswordCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Auth\\Commands\\ResetPasswordCommand.cs",
@@ -2480,7 +2450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 127,
+              "DocumentIndex": 126,
               "Title": "Result.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\Common\\Result.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\Common\\Result.cs",
@@ -2492,7 +2462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 128,
+              "DocumentIndex": 127,
               "Title": "AppointmentController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\Controllers\\AppointmentController.cs",
               "RelativeDocumentMoniker": "Doctor\\Controllers\\AppointmentController.cs",
@@ -2504,7 +2474,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 129,
+              "DocumentIndex": 128,
               "Title": "AppointmentStatus.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Enums\\AppointmentStatus.cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Enums\\AppointmentStatus.cs",
@@ -2516,7 +2486,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 131,
+              "DocumentIndex": 130,
               "Title": "GetAppointmentByIdQuery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Appointments\\Queries\\GetAppointmentByIdQuery.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Appointments\\Queries\\GetAppointmentByIdQuery.cs",
@@ -2528,7 +2498,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 130,
+              "DocumentIndex": 129,
               "Title": "GetAllAppointmentsQuery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Appointments\\Queries\\GetAllAppointmentsQuery.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Appointments\\Queries\\GetAllAppointmentsQuery.cs",
@@ -2540,7 +2510,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 132,
+              "DocumentIndex": 131,
               "Title": "20251111105605_Added_AppointmentService_Relation.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Migrations\\20251111105605_Added_AppointmentService_Relation.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Migrations\\20251111105605_Added_AppointmentService_Relation.cs",
@@ -2552,7 +2522,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 133,
+              "DocumentIndex": 132,
               "Title": "GetServiceByIdQuery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Services\\Queries\\GetServiceByIdQuery.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Services\\Queries\\GetServiceByIdQuery.cs",
@@ -2564,7 +2534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 134,
+              "DocumentIndex": 133,
               "Title": "GetAllServicesQuery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Services\\Queries\\GetAllServicesQuery.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Services\\Queries\\GetAllServicesQuery.cs",
@@ -2576,7 +2546,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 135,
+              "DocumentIndex": 134,
               "Title": "GetAppointmentStatsQuery .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Appointments\\Queries\\GetAppointmentStatsQuery .cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Appointments\\Queries\\GetAppointmentStatsQuery .cs",
@@ -2588,7 +2558,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 136,
+              "DocumentIndex": 135,
               "Title": "UpdateAppointmentCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Appointments\\Commands\\UpdateAppointmentCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Appointments\\Commands\\UpdateAppointmentCommand.cs",
@@ -2600,7 +2570,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 137,
+              "DocumentIndex": 136,
               "Title": "DeleteAppointmentCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Appointments\\Commands\\DeleteAppointmentCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Appointments\\Commands\\DeleteAppointmentCommand.cs",
@@ -2612,7 +2582,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 138,
+              "DocumentIndex": 137,
               "Title": "CreateServiceCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Services\\Commands\\CreateServiceCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Services\\Commands\\CreateServiceCommand.cs",
@@ -2624,7 +2594,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 139,
+              "DocumentIndex": 138,
               "Title": "UpdateServiceCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Services\\Commands\\UpdateServiceCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Services\\Commands\\UpdateServiceCommand.cs",
@@ -2636,7 +2606,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 140,
+              "DocumentIndex": 139,
               "Title": "DeleteServiceCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Services\\Commands\\DeleteServiceCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Services\\Commands\\DeleteServiceCommand.cs",
@@ -2648,7 +2618,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 141,
+              "DocumentIndex": 140,
               "Title": "DeletePatientCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Patients\\Commands\\DeletePatientCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Patients\\Commands\\DeletePatientCommand.cs",
@@ -2660,7 +2630,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 142,
+              "DocumentIndex": 141,
               "Title": "UpdatePatientCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Patients\\Commands\\UpdatePatientCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Patients\\Commands\\UpdatePatientCommand.cs",
@@ -2672,7 +2642,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 143,
+              "DocumentIndex": 142,
               "Title": "CreatePatientCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Patients\\Commands\\CreatePatientCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Patients\\Commands\\CreatePatientCommand.cs",
@@ -2684,7 +2654,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 144,
+              "DocumentIndex": 143,
               "Title": "UpdateSystemSettingCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\SystemSettings\\Commands\\UpdateSystemSettingCommandHandler.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\SystemSettings\\Commands\\UpdateSystemSettingCommandHandler.cs",
@@ -2696,7 +2666,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 145,
+              "DocumentIndex": 144,
               "Title": "AppointmentSlotController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\Controllers\\AppointmentSlotController.cs",
               "RelativeDocumentMoniker": "Doctor\\Controllers\\AppointmentSlotController.cs",
@@ -2708,7 +2678,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 146,
+              "DocumentIndex": 145,
               "Title": "SystemSettingController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\Controllers\\SystemSettingController.cs",
               "RelativeDocumentMoniker": "Doctor\\Controllers\\SystemSettingController.cs",
@@ -2720,7 +2690,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 147,
+              "DocumentIndex": 146,
               "Title": "AppointmentSlotRepository .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Persistence\\Repositories\\AppointmentSlotRepository .cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Persistence\\Repositories\\AppointmentSlotRepository .cs",
@@ -2732,7 +2702,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 148,
+              "DocumentIndex": 147,
               "Title": "GenerateAppointmentSlotsCommandHandler .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\AppointmentSlots\\Commands\\GenerateAppointmentSlotsCommandHandler .cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\AppointmentSlots\\Commands\\GenerateAppointmentSlotsCommandHandler .cs",
@@ -2744,7 +2714,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 149,
+              "DocumentIndex": 148,
               "Title": "GetSystemSettingQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\SystemSettings\\Commands\\GetSystemSettingQueryHandler.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\SystemSettings\\Commands\\GetSystemSettingQueryHandler.cs",
@@ -2756,7 +2726,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 150,
+              "DocumentIndex": 149,
               "Title": "SystemSettingRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Persistence\\Repositories\\SystemSettingRepository.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Persistence\\Repositories\\SystemSettingRepository.cs",
@@ -2768,7 +2738,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 151,
+              "DocumentIndex": 150,
               "Title": "ISystemSettingRepository .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\Interfaces\\Repositories\\ISystemSettingRepository .cs",
               "RelativeDocumentMoniker": "Doctor.Application\\Interfaces\\Repositories\\ISystemSettingRepository .cs",
@@ -2780,7 +2750,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 152,
+              "DocumentIndex": 151,
               "Title": "GetSystemSettingQuery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\SystemSettings\\Queries\\GetSystemSettingQuery.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\SystemSettings\\Queries\\GetSystemSettingQuery.cs",
@@ -2792,7 +2762,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 207,
+              "DocumentIndex": 206,
               "Title": "20251109203112_AddAppointmentSlotRelation.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Migrations\\20251109203112_AddAppointmentSlotRelation.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Migrations\\20251109203112_AddAppointmentSlotRelation.cs",
@@ -2804,7 +2774,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 208,
+              "DocumentIndex": 207,
               "Title": "20251109202148_UpdateAppointmentSlotRelation.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Migrations\\20251109202148_UpdateAppointmentSlotRelation.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Migrations\\20251109202148_UpdateAppointmentSlotRelation.cs",
@@ -2816,7 +2786,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 153,
+              "DocumentIndex": 152,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Doctor\\Controllers\\WeatherForecastController.cs",
@@ -2828,7 +2798,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 154,
+              "DocumentIndex": 153,
               "Title": "UpdateSystemSettingCommand .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\SystemSettings\\Commands\\UpdateSystemSettingCommand .cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\SystemSettings\\Commands\\UpdateSystemSettingCommand .cs",
@@ -2840,7 +2810,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 209,
+              "DocumentIndex": 208,
               "Title": "20251109115714_AddAppointmentSlotTableSystem.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Migrations\\20251109115714_AddAppointmentSlotTableSystem.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Migrations\\20251109115714_AddAppointmentSlotTableSystem.cs",
@@ -2852,7 +2822,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 155,
+              "DocumentIndex": 154,
               "Title": "GetAvailableSlotsQuery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\AppointmentSlots\\Queries\\GetAvailableSlotsQuery.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\AppointmentSlots\\Queries\\GetAvailableSlotsQuery.cs",
@@ -2864,7 +2834,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 156,
+              "DocumentIndex": 155,
               "Title": "GetAllSlotsQuery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\AppointmentSlots\\Queries\\GetAllSlotsQuery.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\AppointmentSlots\\Queries\\GetAllSlotsQuery.cs",
@@ -2876,7 +2846,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 157,
+              "DocumentIndex": 156,
               "Title": "AppointmentSlotDto.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\AppointmentSlots\\DTOs\\AppointmentSlotDto.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\AppointmentSlots\\DTOs\\AppointmentSlotDto.cs",
@@ -2888,7 +2858,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 158,
+              "DocumentIndex": 157,
               "Title": "GetAvailableSlotsQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\AppointmentSlots\\Commands\\GetAvailableSlotsQueryHandler.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\AppointmentSlots\\Commands\\GetAvailableSlotsQueryHandler.cs",
@@ -2900,7 +2870,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 159,
+              "DocumentIndex": 158,
               "Title": "GetAllSlotsQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\AppointmentSlots\\Commands\\GetAllSlotsQueryHandler.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\AppointmentSlots\\Commands\\GetAllSlotsQueryHandler.cs",
@@ -2912,7 +2882,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 160,
+              "DocumentIndex": 159,
               "Title": "GenerateAppointmentSlotsCommand .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\AppointmentSlots\\Commands\\GenerateAppointmentSlotsCommand .cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\AppointmentSlots\\Commands\\GenerateAppointmentSlotsCommand .cs",
@@ -2924,7 +2894,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 161,
+              "DocumentIndex": 160,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\Interfaces\\Repositories\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\Interfaces\\Repositories\\IUnitOfWork.cs",
@@ -2936,7 +2906,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 162,
+              "DocumentIndex": 161,
               "Title": "UnitOfWork .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Persistence\\Repositories\\UnitOfWork .cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Persistence\\Repositories\\UnitOfWork .cs",
@@ -2948,7 +2918,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 210,
+              "DocumentIndex": 209,
               "Title": "20251109111241_AddAppointmentSlotTable.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Migrations\\20251109111241_AddAppointmentSlotTable.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Migrations\\20251109111241_AddAppointmentSlotTable.cs",
@@ -2960,7 +2930,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 163,
+              "DocumentIndex": 162,
               "Title": "SearchPatientQuery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Patients\\Queries\\SearchPatientQuery.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Patients\\Queries\\SearchPatientQuery.cs",
@@ -2972,7 +2942,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 205,
+              "DocumentIndex": 204,
               "Title": "20251108062916_AddDeletedDateToBaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Migrations\\20251108062916_AddDeletedDateToBaseEntity.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Migrations\\20251108062916_AddDeletedDateToBaseEntity.cs",
@@ -2984,7 +2954,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 206,
+              "DocumentIndex": 205,
               "Title": "20251108053753_UpdatePatientDocuments.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Migrations\\20251108053753_UpdatePatientDocuments.cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Migrations\\20251108053753_UpdatePatientDocuments.cs",
@@ -2996,7 +2966,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 164,
+              "DocumentIndex": 163,
               "Title": "20251108045905_InitialCreate2.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Dr.Cavanshir\\DoctorBack\\Doctor\\Doctor.Infrastructure\\Migrations\\20251108045905_InitialCreate2.cs",
               "RelativeDocumentMoniker": "..\\..\\Dr.Cavanshir\\DoctorBack\\Doctor\\Doctor.Infrastructure\\Migrations\\20251108045905_InitialCreate2.cs",
@@ -3008,7 +2978,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 165,
+              "DocumentIndex": 164,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\appsettings.json",
               "RelativeDocumentMoniker": "Doctor\\appsettings.json",
@@ -3020,7 +2990,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 166,
+              "DocumentIndex": 165,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "Doctor\\WeatherForecast.cs",
@@ -3032,7 +3002,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 167,
+              "DocumentIndex": 166,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Doctor\\Properties\\launchSettings.json",
@@ -3044,7 +3014,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 168,
+              "DocumentIndex": 167,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Doctor\\appsettings.Development.json",
@@ -3056,7 +3026,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 169,
+              "DocumentIndex": 168,
               "Title": "20251107124415_AddEmailToUser.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Dr.Cavanshir\\DoctorBack\\Doctor\\Doctor.Infrastructure\\Migrations\\20251107124415_AddEmailToUser.cs",
               "RelativeDocumentMoniker": "..\\..\\Dr.Cavanshir\\DoctorBack\\Doctor\\Doctor.Infrastructure\\Migrations\\20251107124415_AddEmailToUser.cs",
@@ -3068,7 +3038,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 170,
+              "DocumentIndex": 169,
               "Title": "20251107123930_AddUserResetFields.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Dr.Cavanshir\\DoctorBack\\Doctor\\Doctor.Infrastructure\\Migrations\\20251107123930_AddUserResetFields.cs",
               "RelativeDocumentMoniker": "..\\..\\Dr.Cavanshir\\DoctorBack\\Doctor\\Doctor.Infrastructure\\Migrations\\20251107123930_AddUserResetFields.cs",
@@ -3080,7 +3050,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 171,
+              "DocumentIndex": 170,
               "Title": "IEmailService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\Interfaces\\Services\\IEmailService.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\Interfaces\\Services\\IEmailService.cs",
@@ -3092,7 +3062,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 172,
+              "DocumentIndex": 171,
               "Title": "20251107114423_ReSeedUser.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Dr.Cavanshir\\DoctorBack\\Doctor\\Doctor.Infrastructure\\Migrations\\20251107114423_ReSeedUser.cs",
               "RelativeDocumentMoniker": "..\\..\\Dr.Cavanshir\\DoctorBack\\Doctor\\Doctor.Infrastructure\\Migrations\\20251107114423_ReSeedUser.cs",
@@ -3104,7 +3074,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 173,
+              "DocumentIndex": 172,
               "Title": "20251107111613_InitialCreate3.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Dr.Cavanshir\\DoctorBack\\Doctor\\Doctor.Infrastructure\\Migrations\\20251107111613_InitialCreate3.cs",
               "RelativeDocumentMoniker": "..\\..\\Dr.Cavanshir\\DoctorBack\\Doctor\\Doctor.Infrastructure\\Migrations\\20251107111613_InitialCreate3.cs",
@@ -3116,7 +3086,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 174,
+              "DocumentIndex": 173,
               "Title": "20251107111405_InitialCreate2.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Dr.Cavanshir\\DoctorBack\\Doctor\\Doctor.Infrastructure\\Migrations\\20251107111405_InitialCreate2.cs",
               "RelativeDocumentMoniker": "..\\..\\Dr.Cavanshir\\DoctorBack\\Doctor\\Doctor.Infrastructure\\Migrations\\20251107111405_InitialCreate2.cs",
@@ -3128,7 +3098,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 176,
+              "DocumentIndex": 175,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Entities\\BaseEntity.cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Entities\\BaseEntity.cs",
@@ -3140,7 +3110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 175,
+              "DocumentIndex": 174,
               "Title": "ReferralSource.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Enums\\ReferralSource.cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Enums\\ReferralSource.cs",
@@ -3152,7 +3122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 177,
+              "DocumentIndex": 176,
               "Title": "CreateDiagnosisCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Diagnoses\\Commands\\CreateDiagnosisCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Diagnoses\\Commands\\CreateDiagnosisCommand.cs",
@@ -3164,7 +3134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 178,
+              "DocumentIndex": 177,
               "Title": "DiagnosisController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\Controllers\\DiagnosisController.cs",
               "RelativeDocumentMoniker": "Doctor\\Controllers\\DiagnosisController.cs",
@@ -3176,7 +3146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 179,
+              "DocumentIndex": 178,
               "Title": "ServiceController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor\\Controllers\\ServiceController.cs",
               "RelativeDocumentMoniker": "Doctor\\Controllers\\ServiceController.cs",
@@ -3188,7 +3158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 180,
+              "DocumentIndex": 179,
               "Title": "CreateDietCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Diets\\Commands\\CreateDietCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Diets\\Commands\\CreateDietCommand.cs",
@@ -3200,7 +3170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 181,
+              "DocumentIndex": 180,
               "Title": "CreatePrescriptionCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Prescriptions\\Commands\\CreatePrescriptionCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Prescriptions\\Commands\\CreatePrescriptionCommand.cs",
@@ -3212,7 +3182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 182,
+              "DocumentIndex": 181,
               "Title": "GetPatientStatsQuery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Patients\\Queries\\GetPatientStatsQuery.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Patients\\Queries\\GetPatientStatsQuery.cs",
@@ -3224,7 +3194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 183,
+              "DocumentIndex": 182,
               "Title": "Microsoft.NET.Sdk.StaticWebAssets.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.304\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
@@ -3236,7 +3206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 184,
+              "DocumentIndex": 183,
               "Title": "20251104132122_UpdatePatient_AddClinicRelation.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Dr.Cavanshir\\DoctorBack\\Doctor\\Doctor.Infrastructure\\Migrations\\20251104132122_UpdatePatient_AddClinicRelation.cs",
               "RelativeDocumentMoniker": "..\\..\\Dr.Cavanshir\\DoctorBack\\Doctor\\Doctor.Infrastructure\\Migrations\\20251104132122_UpdatePatient_AddClinicRelation.cs",
@@ -3247,7 +3217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 185,
+              "DocumentIndex": 184,
               "Title": "GetAllClinicsQuery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Clinics\\Queries\\GetAllClinicsQuery.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Clinics\\Queries\\GetAllClinicsQuery.cs",
@@ -3259,7 +3229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 186,
+              "DocumentIndex": 185,
               "Title": "GetClinicByIdQuery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Clinics\\Queries\\GetClinicByIdQuery.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Clinics\\Queries\\GetClinicByIdQuery.cs",
@@ -3271,7 +3241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 187,
+              "DocumentIndex": 186,
               "Title": "DeletePrescriptionCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Prescriptions\\Commands\\DeletePrescriptionCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Prescriptions\\Commands\\DeletePrescriptionCommand.cs",
@@ -3283,7 +3253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 188,
+              "DocumentIndex": 187,
               "Title": "DeleteDietCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Diets\\Commands\\DeleteDietCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Diets\\Commands\\DeleteDietCommand.cs",
@@ -3295,7 +3265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 189,
+              "DocumentIndex": 188,
               "Title": "UpdateTreatmentCommandValidator .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Validators\\TreatmentValidator\\UpdateTreatmentCommandValidator .cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Validators\\TreatmentValidator\\UpdateTreatmentCommandValidator .cs",
@@ -3307,7 +3277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 190,
+              "DocumentIndex": 189,
               "Title": "CreateTreatmentCommandValidator .cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Infrastructure\\Validators\\TreatmentValidator\\CreateTreatmentCommandValidator .cs",
               "RelativeDocumentMoniker": "Doctor.Infrastructure\\Validators\\TreatmentValidator\\CreateTreatmentCommandValidator .cs",
@@ -3319,7 +3289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 191,
+              "DocumentIndex": 190,
               "Title": "PaymentType.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Enums\\PaymentType.cs",
               "RelativeDocumentMoniker": "Doctor.Domain\\Enums\\PaymentType.cs",
@@ -3331,7 +3301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 194,
+              "DocumentIndex": 193,
               "Title": "GetAllDiagnosesQuery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Diagnoses\\Queries\\GetAllDiagnosesQuery.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Diagnoses\\Queries\\GetAllDiagnosesQuery.cs",
@@ -3343,7 +3313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 193,
+              "DocumentIndex": 192,
               "Title": "GetDiagnosisByIdQuery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Diagnoses\\Queries\\GetDiagnosisByIdQuery.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Diagnoses\\Queries\\GetDiagnosisByIdQuery.cs",
@@ -3355,7 +3325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 192,
+              "DocumentIndex": 191,
               "Title": "UpdateDietCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Diets\\Commands\\UpdateDietCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Diets\\Commands\\UpdateDietCommand.cs",
@@ -3367,7 +3337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 195,
+              "DocumentIndex": 194,
               "Title": "UpdateDiagnosisCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Diagnoses\\Commands\\UpdateDiagnosisCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Diagnoses\\Commands\\UpdateDiagnosisCommand.cs",
@@ -3379,7 +3349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 196,
+              "DocumentIndex": 195,
               "Title": "DeleteDiagnosisCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Diagnoses\\Commands\\DeleteDiagnosisCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Diagnoses\\Commands\\DeleteDiagnosisCommand.cs",
@@ -3391,7 +3361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 197,
+              "DocumentIndex": 196,
               "Title": "UpdateClinicCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Clinics\\Commands\\UpdateClinicCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Clinics\\Commands\\UpdateClinicCommand.cs",
@@ -3403,7 +3373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 198,
+              "DocumentIndex": 197,
               "Title": "CreateClinicCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Clinics\\Commands\\CreateClinicCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Clinics\\Commands\\CreateClinicCommand.cs",
@@ -3415,7 +3385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 199,
+              "DocumentIndex": 198,
               "Title": "DeleteClinicCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Clinics\\Commands\\DeleteClinicCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Clinics\\Commands\\DeleteClinicCommand.cs",
@@ -3427,7 +3397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 200,
+              "DocumentIndex": 199,
               "Title": "GetPrescriptionByIdQuery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Prescriptions\\Queries\\GetPrescriptionByIdQuery.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Prescriptions\\Queries\\GetPrescriptionByIdQuery.cs",
@@ -3439,7 +3409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 201,
+              "DocumentIndex": 200,
               "Title": "GetAllPrescriptionsQuery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Prescriptions\\Queries\\GetAllPrescriptionsQuery.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Prescriptions\\Queries\\GetAllPrescriptionsQuery.cs",
@@ -3451,7 +3421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 202,
+              "DocumentIndex": 201,
               "Title": "UpdatePrescriptionCommand.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Prescriptions\\Commands\\UpdatePrescriptionCommand.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Prescriptions\\Commands\\UpdatePrescriptionCommand.cs",
@@ -3463,7 +3433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 203,
+              "DocumentIndex": 202,
               "Title": "GetDietByIdQuery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Diets\\Queries\\GetDietByIdQuery.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Diets\\Queries\\GetDietByIdQuery.cs",
@@ -3475,7 +3445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 204,
+              "DocumentIndex": 203,
               "Title": "GetAllDietsQuery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Application\\CQRS\\Diets\\Queries\\GetAllDietsQuery.cs",
               "RelativeDocumentMoniker": "Doctor.Application\\CQRS\\Diets\\Queries\\GetAllDietsQuery.cs",
