@@ -66,10 +66,18 @@ namespace Doctor.Infrastructure.Services
         /// </summary>
         public async Task<string> UploadAsync(IFormFile file, string folder)
         {
-            var result = await SaveFileAsync(file, folder);
-            if (result == null)
-                throw new Exception("Fayl yüklənmədi.");
-            return result;
+            var fileName = $"{Guid.NewGuid()}_{file.FileName}";
+            var path = Path.Combine("uploads", folder, fileName);
+
+            Directory.CreateDirectory(Path.GetDirectoryName(path)!);
+
+            using (var stream = new FileStream(path, FileMode.Create))
+            {
+                await file.CopyToAsync(stream);
+            }
+
+            return "/" + path.Replace("\\", "/"); // 🔥 BURDA FIX
         }
+
     }
 }

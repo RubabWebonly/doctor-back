@@ -69,6 +69,19 @@ namespace Doctor.Infrastructure.Persistence
                     .HasDefaultValue(true);
             });
 
+            modelBuilder.Entity<TreatmentSurveyDiet>()
+    .HasOne(x => x.Diet)
+    .WithMany()
+    .HasForeignKey(x => x.DietId)
+    .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<TreatmentSurveyPrescription>()
+                .HasOne(x => x.Prescription)
+                .WithMany()
+                .HasForeignKey(x => x.PrescriptionId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+
             // 🔹 Əlaqə: Appointment → AppointmentSlot
             modelBuilder.Entity<Appointment>()
                 .HasOne(a => a.AppointmentSlot)

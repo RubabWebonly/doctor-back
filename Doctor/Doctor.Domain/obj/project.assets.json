@@ -3772,11 +3772,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\DoctorBack\\Doctor\\Doctor.Domain\\Doctor.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Doctor.Domain.csproj",
       "projectName": "Doctor.Domain",
-      "projectPath": "C:\\Users\\User\\Desktop\\DoctorBack\\Doctor\\Doctor.Domain\\Doctor.Domain.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\Doctor.Domain.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\DoctorBack\\Doctor\\Doctor.Domain\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\doctor-back\\Doctor\\Doctor.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

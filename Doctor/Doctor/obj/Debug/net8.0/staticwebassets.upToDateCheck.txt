@@ -3,11 +3,15 @@ wwwroot\templates\fordiet.png
 wwwroot\templates\logo.png
 wwwroot\templates\top.png
 wwwroot\uploads\for-diets\40b28d1b-2f07-4749-8681-2e29aaed3f57_Rubab_fordiet.pdf
+wwwroot\uploads\for-diets\78e4e93d-d3a2-4395-9fae-f24436bd4bca_salam_fordiet.pdf
 wwwroot\uploads\for-diets\b87e1204-4968-4bda-be67-9639f341beb1_salam_fordiet.pdf
+wwwroot\uploads\for-diets\ce53361c-8816-419f-a15c-594119171727_salam_fordiet.pdf
 wwwroot\uploads\for-prescriptions\4915f787-565f-499d-8f91-eb2c61ad1f01_string_prescription.pdf
+wwwroot\uploads\for-prescriptions\558a4bcb-10f3-44a1-824d-9fc1db3fbaeb_salam_prescription.pdf
 wwwroot\uploads\for-prescriptions\7fdba72e-f53c-4dba-9566-e7c64a4a53f6_string_prescription.pdf
 wwwroot\uploads\for-prescriptions\881068a8-ff72-49ad-9ed7-b1bccbcdde1b_Namik_prescription.pdf
 wwwroot\uploads\for-prescriptions\c116ab3a-3bf7-4523-a3bd-028f904ab9c4_xdx_prescription.pdf
+wwwroot\uploads\for-prescriptions\f791741c-2617-4901-8f52-13bed7ae2c35_salam_prescription.pdf
 wwwroot\uploads\patient-diets\026e1882-faaa-4086-b170-1ba55921c801_salam_diet.pdf
 wwwroot\uploads\patient-diets\036e7061-3f0b-47a2-a1c6-8fe44e218870__diet.pdf
 wwwroot\uploads\patient-diets\0bd1434d-9754-487b-9c03-0f4834abdaa4__diet.pdf
@@ -24,6 +28,7 @@ wwwroot\uploads\patient-diets\72f1bf1b-ca4b-4241-a80b-d8b271ed55b3__diet.pdf
 wwwroot\uploads\patient-diets\8bd57347-e31f-4c17-863b-1e158f18ff9a_salam_diet.pdf
 wwwroot\uploads\patient-diets\902fe20b-d482-4d03-a499-4c72c259fff8_xdx_diet.pdf
 wwwroot\uploads\patient-diets\a3c4522f-0598-45b7-a15d-b14e4b7a931d__diet.pdf
+wwwroot\uploads\patient-diets\a937c370-ee94-4270-93e4-57441d36a529_as_diet.pdf
 wwwroot\uploads\patient-diets\aec26865-93d7-4f30-83fd-0d1a5ee8a127_as_diet.pdf
 wwwroot\uploads\patient-diets\c3325e33-d713-44e1-ae8c-fc8370599804__diet.pdf
 wwwroot\uploads\patient-prescriptions\1f31da79-d206-44e9-aff0-8676a1e4135b__prescription.pdf

@@ -86,15 +86,16 @@ namespace Doctor.Application.CQRS.Treatments.Commands
 
         public async Task<Unit> Handle(UpdateTreatmentCommand request, CancellationToken cancellationToken)
         {
-            // 🔹 Əsas Treatment məlumatlarını tap
+            // ============================
+            // 1) TREATMENT UPDATE
+            // ============================
             var treatment = await _treatmentRepo.GetByIdAsync(request.Id);
             if (treatment == null)
                 throw new Exception("Müalicə tapılmadı.");
 
-            // 🔹 Əsas müayinə hissəsini yenilə
             treatment.ServiceId = request.ServiceId;
             treatment.DiagnosisId = request.DiagnosisId;
-            treatment.Complaint = request.Complaint;     // 🔥 Complaint map olundu
+            treatment.Complaint = request.Complaint;
             treatment.Notes = request.Notes;
             treatment.UpdatedDate = DateTime.UtcNow;
 
@@ -110,137 +111,188 @@ namespace Doctor.Application.CQRS.Treatments.Commands
             _treatmentRepo.Update(treatment);
             await _treatmentRepo.SaveAsync();
 
-            // 🔹 Mövcud anketləri tap
-            var allSurveys = await _surveyRepo.GetAllAsync();
-            var treatmentSurveys = allSurveys
-                .Where(s => s.TreatmentId == treatment.Id)
+            // ============================
+            // 2) BÜTÜN MÖVCUD SURVEY-LƏRİ ÇƏK
+            // ============================
+            var existingSurveys = (await _surveyRepo.GetAllAsync())
+                .Where(x => x.TreatmentId == treatment.Id)
                 .ToList();
 
-            foreach (var surveyDto in request.Surveys)
+            // ============================
+            // 3) HANSI SURVEY SİLİNMƏLİDİR?
+            // ============================
+            var idsFromFront = request.Surveys
+                .Where(x => x.Id.HasValue)
+                .Select(x => x.Id.Value)
+                .ToList();
+
+            var surveysToDelete = existingSurveys
+                .Where(s => !idsFromFront.Contains(s.Id))
+                .ToList();
+
+            foreach (var del in surveysToDelete)
+            {
+                // files sil
+                var files = (await _fileRepo.GetAllAsync())
+                    .Where(f => f.TreatmentSurveyId == del.Id)
+                    .ToList();
+
+                foreach (var f in files)
+                {
+                    _fileService.Delete(f.FilePath ?? "");
+                    _fileRepo.Delete(f);
+                }
+
+                // diet sil
+                var diets = (await _dietRepo.GetAllAsync())
+                    .Where(d => d.TreatmentSurveyId == del.Id)
+                    .ToList();
+                foreach (var d in diets) _dietRepo.Delete(d);
+
+                // pres sil
+                var pres = (await _presRepo.GetAllAsync())
+                    .Where(p => p.TreatmentSurveyId == del.Id)
+                    .ToList();
+                foreach (var p in pres) _presRepo.Delete(p);
+
+                _surveyRepo.Delete(del);
+            }
+
+            await _surveyRepo.SaveAsync();
+
+            // ============================
+            // 4) SURVEY UPDATE / CREATE
+            // ============================
+            foreach (var sDto in request.Surveys)
             {
                 TreatmentSurvey survey;
 
-                // mövcud anket varsa
-                if (surveyDto.Id.HasValue)
+                if (sDto.Id.HasValue)
                 {
-                    survey = treatmentSurveys.FirstOrDefault(s => s.Id == surveyDto.Id.Value);
-                    if (survey == null)
-                        continue;
-
-                    survey.Anamnesis = surveyDto.Anamnesis;
-                    survey.AnamnesisDate = surveyDto.AnamnesisDate;
-
-                    survey.PreviousDiseases = surveyDto.PreviousDiseases;
-                    survey.MedicationUsage = surveyDto.MedicationUsage;
-                    survey.PastSurgeries = surveyDto.PastSurgeries;               // 🔥
-                    survey.HereditaryDiseases = surveyDto.HereditaryDiseases;     // 🔥
-
-                    survey.HasAllergy = surveyDto.HasAllergy;
-                    survey.UsesAlcohol = surveyDto.UsesAlcohol;
-                    survey.Smokes = surveyDto.Smokes;
-
-                    survey.PhysicalExamination = surveyDto.PhysicalExamination;
-                    survey.PlanNotes = surveyDto.PlanNotes;
-                    survey.NextVisitDate = surveyDto.NextVisitDate;
+                    // UPDATE
+                    survey = existingSurveys.First(x => x.Id == sDto.Id.Value);
+                    survey.Anamnesis = sDto.Anamnesis;
+                    survey.AnamnesisDate = sDto.AnamnesisDate;
+                    survey.PreviousDiseases = sDto.PreviousDiseases;
+                    survey.MedicationUsage = sDto.MedicationUsage;
+                    survey.PastSurgeries = sDto.PastSurgeries;
+                    survey.HereditaryDiseases = sDto.HereditaryDiseases;
+                    survey.HasAllergy = sDto.HasAllergy;
+                    survey.UsesAlcohol = sDto.UsesAlcohol;
+                    survey.Smokes = sDto.Smokes;
+                    survey.PhysicalExamination = sDto.PhysicalExamination;
+                    survey.PlanNotes = sDto.PlanNotes;
+                    survey.NextVisitDate = sDto.NextVisitDate;
 
                     _surveyRepo.Update(survey);
                     await _surveyRepo.SaveAsync();
                 }
                 else
                 {
-                    // yeni anket əlavə et
+                    // CREATE NEW SURVEY
                     survey = new TreatmentSurvey
                     {
                         TreatmentId = treatment.Id,
-                        Anamnesis = surveyDto.Anamnesis,
-                        AnamnesisDate = surveyDto.AnamnesisDate,
-
-                        PreviousDiseases = surveyDto.PreviousDiseases,
-                        MedicationUsage = surveyDto.MedicationUsage,
-                        PastSurgeries = surveyDto.PastSurgeries,               // 🔥
-                        HereditaryDiseases = surveyDto.HereditaryDiseases,     // 🔥
-
-                        HasAllergy = surveyDto.HasAllergy,
-                        UsesAlcohol = surveyDto.UsesAlcohol,
-                        Smokes = surveyDto.Smokes,
-
-                        PhysicalExamination = surveyDto.PhysicalExamination,
-                        PlanNotes = surveyDto.PlanNotes,
-                        NextVisitDate = surveyDto.NextVisitDate
+                        Anamnesis = sDto.Anamnesis,
+                        AnamnesisDate = sDto.AnamnesisDate,
+                        PreviousDiseases = sDto.PreviousDiseases,
+                        MedicationUsage = sDto.MedicationUsage,
+                        PastSurgeries = sDto.PastSurgeries,
+                        HereditaryDiseases = sDto.HereditaryDiseases,
+                        HasAllergy = sDto.HasAllergy,
+                        UsesAlcohol = sDto.UsesAlcohol,
+                        Smokes = sDto.Smokes,
+                        PhysicalExamination = sDto.PhysicalExamination,
+                        PlanNotes = sDto.PlanNotes,
+                        NextVisitDate = sDto.NextVisitDate
                     };
 
                     await _surveyRepo.AddAsync(survey);
                     await _surveyRepo.SaveAsync();
                 }
 
-                // 🔹 Faylları yenilə
-                var allFiles = await _fileRepo.GetAllAsync();
-                var filesForSurvey = allFiles
+                // ============================
+                // FILE UPDATE  
+                // ============================
+                var allFiles = (await _fileRepo.GetAllAsync())
                     .Where(f => f.TreatmentSurveyId == survey.Id)
                     .ToList();
 
-                var filesToRemove = filesForSurvey
-                    .Where(f => surveyDto.ExistingFiles == null || !surveyDto.ExistingFiles.Contains(f.FilePath))
+                var filesToKeep = sDto.ExistingFiles ?? new List<string>();
+
+                var filesToRemove = allFiles
+                    .Where(f => !filesToKeep.Contains(f.FilePath ?? ""))
                     .ToList();
 
                 foreach (var f in filesToRemove)
                 {
-                    if (!string.IsNullOrWhiteSpace(f.FilePath))
-                        _fileService.Delete(f.FilePath);
-
+                    _fileService.Delete(f.FilePath ?? "");
                     _fileRepo.Delete(f);
                 }
+
                 await _fileRepo.SaveAsync();
 
-                if (surveyDto.NewFiles != null)
+                // NEW FILES
+                if (sDto.NewFiles != null)
                 {
-                    foreach (var file in surveyDto.NewFiles)
+                    foreach (var nf in sDto.NewFiles)
                     {
-                        var path = await _fileService.UploadAsync(file, "treatment-surveys");
+                        var path = await _fileService.UploadAsync(nf, "treatment-surveys");
+
                         await _fileRepo.AddAsync(new TreatmentSurveyFile
                         {
                             TreatmentSurveyId = survey.Id,
                             FilePath = path,
-                            FileType = Path.GetExtension(file.FileName)
+                            FileType = Path.GetExtension(nf.FileName)
                         });
                     }
+
                     await _fileRepo.SaveAsync();
                 }
 
-                // 🔹 Diet və reseptləri yenilə
-                var allDiets = await _dietRepo.GetAllAsync();
-                var oldDiets = allDiets.Where(d => d.TreatmentSurveyId == survey.Id);
-                foreach (var d in oldDiets)
-                    _dietRepo.Delete(d);
+                // ============================
+                // DIET UPDATE
+                // ============================
+                var oldDiets = (await _dietRepo.GetAllAsync())
+                    .Where(d => d.TreatmentSurveyId == survey.Id);
+
+                foreach (var d in oldDiets) _dietRepo.Delete(d);
                 await _dietRepo.SaveAsync();
 
-                if (surveyDto.SelectedDietIds != null)
+                if (sDto.SelectedDietIds != null)
                 {
-                    foreach (var id in surveyDto.SelectedDietIds)
-                        await _dietRepo.AddAsync(new TreatmentSurveyDiet
-                        {
-                            TreatmentSurveyId = survey.Id,
-                            DietId = id
-                        });
-
+                    foreach (var id in sDto.SelectedDietIds)
+                    {
+                        if (id > 0)
+                            await _dietRepo.AddAsync(new TreatmentSurveyDiet
+                            {
+                                TreatmentSurveyId = survey.Id,
+                                DietId = id
+                            });
+                    }
                     await _dietRepo.SaveAsync();
                 }
 
-                var allPres = await _presRepo.GetAllAsync();
-                var oldPres = allPres.Where(p => p.TreatmentSurveyId == survey.Id);
-                foreach (var p in oldPres)
-                    _presRepo.Delete(p);
+                // ============================
+                // PRESCRIPTION UPDATE
+                // ============================
+                var oldPres = (await _presRepo.GetAllAsync())
+                    .Where(p => p.TreatmentSurveyId == survey.Id);
+
+                foreach (var p in oldPres) _presRepo.Delete(p);
                 await _presRepo.SaveAsync();
 
-                if (surveyDto.SelectedPrescriptionIds != null)
+                if (sDto.SelectedPrescriptionIds != null)
                 {
-                    foreach (var id in surveyDto.SelectedPrescriptionIds)
-                        await _presRepo.AddAsync(new TreatmentSurveyPrescription
-                        {
-                            TreatmentSurveyId = survey.Id,
-                            PrescriptionId = id
-                        });
-
+                    foreach (var id in sDto.SelectedPrescriptionIds)
+                    {
+                        if (id > 0)
+                            await _presRepo.AddAsync(new TreatmentSurveyPrescription
+                            {
+                                TreatmentSurveyId = survey.Id,
+                                PrescriptionId = id
+                            });
+                    }
                     await _presRepo.SaveAsync();
                 }
             }
@@ -248,4 +300,6 @@ namespace Doctor.Application.CQRS.Treatments.Commands
             return Unit.Value;
         }
     }
+
+
 }

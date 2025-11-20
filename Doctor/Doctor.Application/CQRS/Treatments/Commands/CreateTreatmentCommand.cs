@@ -33,6 +33,7 @@ namespace Doctor.Application.CQRS.Treatments.Commands
     {
         public string? Anamnesis { get; set; }
         public DateTime? AnamnesisDate { get; set; }
+
         public List<IFormFile>? Files { get; set; }
 
         public List<int>? SelectedDietIds { get; set; }
@@ -54,6 +55,7 @@ namespace Doctor.Application.CQRS.Treatments.Commands
         public DateTime? NextVisitDate { get; set; }
     }
 
+    // ============================ CREATE HANDLER ===============================
     public class CreateTreatmentHandler : IRequestHandler<CreateTreatmentCommand, int>
     {
         private readonly ITreatmentRepository _treatmentRepo;
@@ -81,6 +83,10 @@ namespace Doctor.Application.CQRS.Treatments.Commands
 
         public async Task<int> Handle(CreateTreatmentCommand request, CancellationToken cancellationToken)
         {
+            // ===================================================================
+            // 🔥 1) MAIN TREATMENT YARADILIR
+            // ===================================================================
+
             var treatment = new Treatment
             {
                 PatientId = request.PatientId,
@@ -103,9 +109,14 @@ namespace Doctor.Application.CQRS.Treatments.Commands
             await _treatmentRepo.AddAsync(treatment);
             await _treatmentRepo.SaveAsync();
 
-            if (request.Surveys is null || request.Surveys.Count == 0)
+            // Survey yoxdursa — qurtar
+            if (request.Surveys == null || request.Surveys.Count == 0)
                 return treatment.Id;
 
+
+            // ===================================================================
+            // 🔥 2) SURVEY-LƏRİN YARADILMASI
+            // ===================================================================
             foreach (var s in request.Surveys)
             {
                 var survey = new TreatmentSurvey
@@ -131,52 +142,70 @@ namespace Doctor.Application.CQRS.Treatments.Commands
                 await _surveyRepo.AddAsync(survey);
                 await _surveyRepo.SaveAsync();
 
-                // FILES
+
+                // ===================================================================
+                // 🔥 3) FILES — FAYLLARIN YÜKLƏNMƏSİ
+                // ===================================================================
                 if (s.Files is not null && s.Files.Count > 0)
                 {
                     foreach (var file in s.Files)
                     {
                         var path = await _fileService.UploadAsync(file, "treatment-surveys");
 
-                        await _fileRepo.AddAsync(new TreatmentSurveyFile
+                        var surveyFile = new TreatmentSurveyFile
                         {
                             TreatmentSurveyId = survey.Id,
                             FilePath = path,
                             FileType = Path.GetExtension(file.FileName)
-                        });
+                        };
+
+                        await _fileRepo.AddAsync(surveyFile);
                     }
+
                     await _fileRepo.SaveAsync();
                 }
 
-                // DIETS — FIXED
-                if (s.SelectedDietIds is not null)
-                {
-                    foreach (var id in s.SelectedDietIds)
-                    {
-                        if (id <= 0) continue;  // 🔥 FK ERROR FIX
 
-                        await _dietRepo.AddAsync(new TreatmentSurveyDiet
+                // ===================================================================
+                // 🔥 4) DIETS
+                // ===================================================================
+                if (s.SelectedDietIds != null)
+                {
+                    foreach (var dietId in s.SelectedDietIds)
+                    {
+                        if (dietId <= 0) continue;
+
+                        var diet = new TreatmentSurveyDiet
                         {
                             TreatmentSurveyId = survey.Id,
-                            DietId = id
-                        });
+                            DietId = dietId
+                        };
+
+                        await _dietRepo.AddAsync(diet);
                     }
+
                     await _dietRepo.SaveAsync();
                 }
 
-                // PRESCRIPTIONS — FIXED
-                if (s.SelectedPrescriptionIds is not null)
-                {
-                    foreach (var id in s.SelectedPrescriptionIds)
-                    {
-                        if (id <= 0) continue;  // 🔥 FK ERROR FIX
 
-                        await _presRepo.AddAsync(new TreatmentSurveyPrescription
+                // ===================================================================
+                // 🔥 5) PRESCRIPTIONS
+                // ===================================================================
+                if (s.SelectedPrescriptionIds != null)
+                {
+                    foreach (var presId in s.SelectedPrescriptionIds)
+                    {
+                        if (presId <= 0) continue;
+
+                        var pres = new TreatmentSurveyPrescription
                         {
                             TreatmentSurveyId = survey.Id,
-                            PrescriptionId = id
-                        });
+                            PrescriptionId = presId
+                        };
+
+                        await _presRepo.AddAsync(pres);
                     }
+
                     await _presRepo.SaveAsync();
                 }
             }

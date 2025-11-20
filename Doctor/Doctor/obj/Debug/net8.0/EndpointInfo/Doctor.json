@@ -1737,10 +1737,21 @@
         }
       }
     },
-    "/api/Treatment/update": {
+    "/api/Treatment/update/{id}": {
       "put": {
         "tags": [
           "Treatment"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "requestBody": {
           "content": {

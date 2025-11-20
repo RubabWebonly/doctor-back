@@ -46,8 +46,21 @@ namespace Doctor.Infrastructure.Persistence.Repositories
                 .Include(x => x.Patient)
                 .Include(x => x.Service)
                 .Include(x => x.Diagnosis)
+
                 .Include(x => x.Surveys)
+                    .ThenInclude(s => s.Files)
+
+                .Include(x => x.Surveys)
+                    .ThenInclude(s => s.Diets)
+                        .ThenInclude(d => d.Diet)
+
+                .Include(x => x.Surveys)
+                    .ThenInclude(s => s.Prescriptions)
+                        .ThenInclude(p => p.Prescription)
+
+                .OrderByDescending(x => x.CreatedDate)
                 .ToListAsync();
         }
+
     }
 }

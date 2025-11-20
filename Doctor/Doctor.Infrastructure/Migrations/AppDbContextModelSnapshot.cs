@@ -701,36 +701,6 @@ namespace Doctor.Infrastructure.Migrations
                     b.ToTable("TreatmentSurvey");
                 });
 
-            modelBuilder.Entity("Doctor.Domain.Entities.TreatmentSurveyDiet", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("DietId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("TreatmentSurveyId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("DietId");
-
-                    b.HasIndex("TreatmentSurveyId");
-
-                    b.ToTable("TreatmentSurveyDiet");
-                });
-
             modelBuilder.Entity("Doctor.Domain.Entities.TreatmentSurveyFile", b =>
                 {
                     b.Property<int>("Id")
@@ -762,36 +732,6 @@ namespace Doctor.Infrastructure.Migrations
                     b.HasIndex("TreatmentSurveyId");
 
                     b.ToTable("TreatmentSurveyFile");
-                });
-
-            modelBuilder.Entity("Doctor.Domain.Entities.TreatmentSurveyPrescription", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("TEXT");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("PrescriptionId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("TreatmentSurveyId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateTime?>("UpdatedDate")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PrescriptionId");
-
-                    b.HasIndex("TreatmentSurveyId");
-
-                    b.ToTable("TreatmentSurveyPrescription");
                 });
 
             modelBuilder.Entity("Doctor.Domain.Entities.UserProfile", b =>
@@ -911,11 +851,11 @@ namespace Doctor.Infrastructure.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2025, 11, 19, 19, 58, 27, 188, DateTimeKind.Utc).AddTicks(4693),
+                            CreatedDate = new DateTime(2025, 11, 20, 11, 44, 47, 869, DateTimeKind.Utc).AddTicks(1969),
                             Email = "rubabhuseynova013@gmail.com",
                             FullName = "Dr. Cavanşir Vahabov",
                             IsDeleted = false,
-                            PasswordHash = "AQAAAAIAAYagAAAAEEvKyq7KhTO5woMPfVkZG9YgQC5hJQPDsc8JIuXIzNshVy+mG7QZzOWx4Mqc29fBkw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEDcjpKFJB20zx7dfj/B/Xt/0BpKrDKXpY4ABI72RufROHNLS0Bx9ZsCe5HJ7k7aGHg==",
                             PhoneNumber = "+9940104149525"
                         });
                 });
@@ -1016,6 +956,66 @@ namespace Doctor.Infrastructure.Migrations
                     b.HasIndex("ServiceId");
 
                     b.ToTable("Treatments");
+                });
+
+            modelBuilder.Entity("TreatmentSurveyDiet", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("DietId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("TreatmentSurveyId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DietId");
+
+                    b.HasIndex("TreatmentSurveyId");
+
+                    b.ToTable("TreatmentSurveyDiet");
+                });
+
+            modelBuilder.Entity("TreatmentSurveyPrescription", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("PrescriptionId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("TreatmentSurveyId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PrescriptionId");
+
+                    b.HasIndex("TreatmentSurveyId");
+
+                    b.ToTable("TreatmentSurveyPrescription");
                 });
 
             modelBuilder.Entity("Doctor.Domain.Entities.Appointment", b =>
@@ -1133,25 +1133,6 @@ namespace Doctor.Infrastructure.Migrations
                     b.Navigation("Treatment");
                 });
 
-            modelBuilder.Entity("Doctor.Domain.Entities.TreatmentSurveyDiet", b =>
-                {
-                    b.HasOne("Doctor.Domain.Entities.Diet", "Diet")
-                        .WithMany()
-                        .HasForeignKey("DietId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Doctor.Domain.Entities.TreatmentSurvey", "TreatmentSurvey")
-                        .WithMany("Diets")
-                        .HasForeignKey("TreatmentSurveyId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Diet");
-
-                    b.Navigation("TreatmentSurvey");
-                });
-
             modelBuilder.Entity("Doctor.Domain.Entities.TreatmentSurveyFile", b =>
                 {
                     b.HasOne("Doctor.Domain.Entities.TreatmentSurvey", "TreatmentSurvey")
@@ -1159,25 +1140,6 @@ namespace Doctor.Infrastructure.Migrations
                         .HasForeignKey("TreatmentSurveyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("TreatmentSurvey");
-                });
-
-            modelBuilder.Entity("Doctor.Domain.Entities.TreatmentSurveyPrescription", b =>
-                {
-                    b.HasOne("Doctor.Domain.Entities.Prescription", "Prescription")
-                        .WithMany()
-                        .HasForeignKey("PrescriptionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Doctor.Domain.Entities.TreatmentSurvey", "TreatmentSurvey")
-                        .WithMany("Prescriptions")
-                        .HasForeignKey("TreatmentSurveyId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Prescription");
 
                     b.Navigation("TreatmentSurvey");
                 });
@@ -1207,6 +1169,44 @@ namespace Doctor.Infrastructure.Migrations
                     b.Navigation("Patient");
 
                     b.Navigation("Service");
+                });
+
+            modelBuilder.Entity("TreatmentSurveyDiet", b =>
+                {
+                    b.HasOne("Doctor.Domain.Entities.PatientDiet", "Diet")
+                        .WithMany()
+                        .HasForeignKey("DietId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Doctor.Domain.Entities.TreatmentSurvey", "TreatmentSurvey")
+                        .WithMany("Diets")
+                        .HasForeignKey("TreatmentSurveyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Diet");
+
+                    b.Navigation("TreatmentSurvey");
+                });
+
+            modelBuilder.Entity("TreatmentSurveyPrescription", b =>
+                {
+                    b.HasOne("Doctor.Domain.Entities.PatientPrescription", "Prescription")
+                        .WithMany()
+                        .HasForeignKey("PrescriptionId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Doctor.Domain.Entities.TreatmentSurvey", "TreatmentSurvey")
+                        .WithMany("Prescriptions")
+                        .HasForeignKey("TreatmentSurveyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Prescription");
+
+                    b.Navigation("TreatmentSurvey");
                 });
 
             modelBuilder.Entity("Doctor.Domain.Entities.Appointment", b =>

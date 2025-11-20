@@ -17,10 +17,13 @@ public class TreatmentController : ControllerBase
     public async Task<IActionResult> Create([FromForm] CreateTreatmentCommand cmd)
         => Ok(await _mediator.Send(cmd));
 
-    [HttpPut("update")]
-    public async Task<IActionResult> Update([FromForm] UpdateTreatmentCommand cmd)
+    [HttpPut("update/{id}")]
+    public async Task<IActionResult> Update(int id, [FromForm] UpdateTreatmentCommand cmd)
     {
+        cmd.Id = id;
+
         await _mediator.Send(cmd);
+
         return Ok("Müalicə yeniləndi.");
     }
 

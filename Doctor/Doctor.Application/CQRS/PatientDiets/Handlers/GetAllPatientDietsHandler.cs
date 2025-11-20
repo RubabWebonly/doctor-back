@@ -7,21 +7,18 @@ namespace Doctor.Application.CQRS.PatientDiets.Handlers
 {
     public class GetAllPatientDietsHandler : IRequestHandler<GetAllPatientDietsQuery, object>
     {
-        private readonly IGenericRepository<PatientDiet> _repo;
+        private readonly IPatientDietRepository _repo;
 
-        public GetAllPatientDietsHandler(IGenericRepository<PatientDiet> repo)
+        public GetAllPatientDietsHandler(IPatientDietRepository repo)
         {
             _repo = repo;
         }
 
         public async Task<object> Handle(GetAllPatientDietsQuery request, CancellationToken ct)
         {
-            var diets = await _repo.GetAllAsync();
+            var diets = await _repo.GetAllWithFilesAsync();
 
-            // Əgər soft delete varsa, filter et
-            var filtered = diets.Where(x => !x.IsDeleted).OrderByDescending(x => x.CreatedDate);
-
-            return filtered.Select(d => new
+            return diets.Select(d => new
             {
                 d.Id,
                 d.PatientFullName,
